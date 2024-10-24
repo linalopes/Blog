@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "'Pulleying' my heart over the network with OSC"
-id: 23-10-2024-pulleying-my-heart-over-the-network-with-osc.md
+id: 2024-10-23-pulleying-my-heart-over-the-network-with-osc.md
 categories:
   - kinetic
 image: https://live.staticflickr.com/65535/54090060180_8154d18455_o.jpg
@@ -12,7 +12,7 @@ tags:
   - osc
   - motor
   - mechanics
-date: 23-10-2024
+date: 2024-10-23
 author: lina
 ---
 <video width="100%" controls>  
