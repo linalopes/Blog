@@ -107,6 +107,9 @@ If you're working with servo motors on the ESP8266, there are a few key things t
 2. **Timer Conflicts**: The ESP8266 uses timers for various processes (WiFi, interrupts, etc.), and this can interfere with precise servo control if you're using the standard Servo library. The ISR-based library bypasses these conflicts by using dedicated interrupt-based PWM control.
     
 3. **Power Supply**: Servos like the SG90 require stable power, especially if you want smooth motion across the full 180 degrees. Make sure the servo is powered independently of the ESP8266's onboard power supply, as the board might not provide enough current for both the ESP8266 and the servo.
+---
+### Github
+Codes available in the [repository](https://github.com/linalopes/hands-OSC)
 
 
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/200845412@N02/albums/72177720321468864" title="2024 10 &#x27;Pulleying&#x27; my heart"><img src="https://live.staticflickr.com/65535/54090060180_d803357e7c_z.jpg" width="640" height="480" alt="2024 10 &#x27;Pulleying&#x27; my heart"/></a>

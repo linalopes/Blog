@@ -97,6 +97,11 @@ The communication between **TouchOSC** and the **ESP8266** happens over a networ
 
 In summary, TouchOSC creates and sends messages, and the ESP8266, with the help of the ArduinoOSC and other libraries, understands these messages and performs actions accordingly.
 
+---
+### Github
+Codes available in the [repository](https://github.com/linalopes/hands-OSC)
+
+
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/200845412@N02/54089937904/in/album-72177720321468864/" title="2024 10 Pulleying my heart">
 <img src="https://live.staticflickr.com/65535/54089937904_5462ec9940_o.png" width="100%" alt="2024 10 Pulleying my heart"/></a>
 _click to see more images from the process_
