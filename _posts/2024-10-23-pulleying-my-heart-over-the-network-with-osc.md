@@ -15,9 +15,12 @@ tags:
 date: 2024-10-23
 author: lina
 ---
-<video width="100%" controls>  
-  <source src="https://live.staticflickr.com/video/54090060330/31ce273197/1080p.mp4?s=eyJpIjo1NDA5MDA2MDMzMCwiZSI6MTcyOTc1MzI0MSwicyI6Ijk5ODIzMzlkMDg1ZmMzYmNkYjk1ZjEwZjg2ODEwZGUwOTIwYTI3NTgiLCJ2IjoxfQ" type="video/mp4">  
+
+<video width="50%" height="50%" controls muted autoplay>
+  <source src="https://live.staticflickr.com/video/54090060330/31ce273197/1080p.mp4?s=eyJpIjo1NDA5MDA2MDMzMCwiZSI6MTcyOTc1MzI0MSwicyI6Ijk5ODIzMzlkMDg1ZmMzYmNkYjk1ZjEwZjg2ODEwZGUwOTIwYTI3NTgiLCJ2IjoxfQ" type="video/mp4">
+  Your browser does not support the video tag.
 </video>
+
 ### Understanding Networks, the Internet, and the Web
 
 A **network** is a group of devices (like computers, smartphones, and tablets) that are connected and can share information. This could be within a small area, like a home or office, or across larger distances. Think of a network as the **roads** that let these devices "travel" and communicate with each other.
