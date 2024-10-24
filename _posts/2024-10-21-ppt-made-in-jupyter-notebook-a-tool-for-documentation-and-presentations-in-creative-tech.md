@@ -25,7 +25,7 @@ This curiosity led me to discover RISE, an extension that allows you to create p
 The more I explored, the more questions I had—<mark class="hltr-pink">what would it be like to present a machine learning model directly from a Jupyter Notebook?</mark> And how could I make that presentation interactive? RISE, which is based on RevealJS (a framework I already loved for its dynamic presentations), gave me that power. Not only could I create sleek, dynamic slideshows, but I could also edit them live during my presentations—a dream for anyone who values flexibility in the creative process.
 
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/200845412@N02/54085770964/in/dateposted-public/" title="copy_9200D704-2892-4F25-B043-E91865967D90"><img src="https://live.staticflickr.com/31337/54085770964_18c17f1864_o.jpg" width="100%" alt="copy_9200D704-2892-4F25-B043-E91865967D90"/></a>
-_play the video to see how simple_
+_play the video to see how simple and beautiful it is_
 
 Now, one thing I ran into was that RISE was designed for the classic Jupyter Notebook (version 6), while I was using the newer version (Jupyter Notebook 7) with JupyterLab in my environment. After some troubleshooting, I realized the solution was to use `pip install RISE`, which launched the classic version of Jupyter Notebook where RISE works smoothly. This opened up so many possibilities for me—being able to link to different notebooks, compare models trained in various ways, and present my findings in a way that felt more intuitive and visual.
 
