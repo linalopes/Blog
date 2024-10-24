@@ -19,7 +19,6 @@ author: lina
 
 <video width="50%" height="50%" controls muted autoplay>
   <source src="https://live.staticflickr.com/video/54090060330/31ce273197/1080p.mp4?s=eyJpIjo1NDA5MDA2MDMzMCwiZSI6MTcyOTc1MzI0MSwicyI6Ijk5ODIzMzlkMDg1ZmMzYmNkYjk1ZjEwZjg2ODEwZGUwOTIwYTI3NTgiLCJ2IjoxfQ" type="video/mp4">
-  Your browser does not support the video tag.
 </video>
 _This prototype is a partnership with my amazing husband and friend Fadri Pestalozzi 🫀_
 

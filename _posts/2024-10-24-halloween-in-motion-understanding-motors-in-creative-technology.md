@@ -5,7 +5,7 @@ id: 2024-10-24-halloween-in-motion-understanding-motors-in-creative-technology.m
 categories:
   - kinetic
   - prototype
-image: assets/images/gepeto.png
+image: https://live.staticflickr.com/31337/54090060365_213c0ebf36_z.jpg
 share: "true"
 comments: "true"
 filename: Blog/_posts/2024-10-24-halloween-in-motion-understanding-motors-in-creative-technology.md
@@ -18,7 +18,6 @@ author: lina
 
 <video width="100%" height="100%" controls muted autoplay>
   <source src="https://live.staticflickr.com/video/54090060365/213c0ebf36/1080p.mp4?s=eyJpIjo1NDA5MDA2MDM2NSwiZSI6MTcyOTc1NjYwOCwicyI6Ijc2MjYzYjA0MzdlNjkxMjE2Y2FmYjBmMTZhNThjODkzMmYxMDNjMzEiLCJ2IjoxfQ" type="video/mp4">
-  Your browser does not support the video tag.
 </video>
 
 ### Understanding Motors in Creative Technology
