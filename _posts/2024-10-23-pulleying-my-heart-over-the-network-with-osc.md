@@ -4,14 +4,15 @@ title: "'Pulleying' my heart over the network with OSC"
 id: 2024-10-23-pulleying-my-heart-over-the-network-with-osc.md
 categories:
   - kinetic
+  - prototype
 image: https://live.staticflickr.com/65535/54090060180_8154d18455_o.jpg
 share: "true"
 comments: "true"
-filename: Blog/_posts/23-10-2024--pulleying-my-heart-over-the-network-with-osc.md
+filename: Blog/_posts/23-10-2024-pulleying-my-heart-over-the-network-with-osc.md
 tags:
   - osc
   - motor
-  - mechanics
+  - esp8266
 date: 2024-10-23
 author: lina
 ---
@@ -20,6 +21,7 @@ author: lina
   <source src="https://live.staticflickr.com/video/54090060330/31ce273197/1080p.mp4?s=eyJpIjo1NDA5MDA2MDMzMCwiZSI6MTcyOTc1MzI0MSwicyI6Ijk5ODIzMzlkMDg1ZmMzYmNkYjk1ZjEwZjg2ODEwZGUwOTIwYTI3NTgiLCJ2IjoxfQ" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+_This prototype is a partnership with my amazing husband and friend Fadri Pestalozzi 🫀_
 
 ### Understanding Networks, the Internet, and the Web
 
