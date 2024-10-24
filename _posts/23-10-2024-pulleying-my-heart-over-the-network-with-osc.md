@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "'Pulleying' my heart over the network with OSC"
-id: 23-10-2024--pulleying-my-heart-over-the-network-with-osc.md
+id: 23-10-2024-pulleying-my-heart-over-the-network-with-osc.md
 categories:
   - kinetic
 image: https://live.staticflickr.com/65535/54090060180_8154d18455_o.jpg
@@ -15,7 +15,7 @@ tags:
 date: 23-10-2024
 author: lina
 ---
-<video width="320" height="240" controls>  
+<video width="100%" controls>  
   <source src="https://live.staticflickr.com/video/54090060330/31ce273197/1080p.mp4?s=eyJpIjo1NDA5MDA2MDMzMCwiZSI6MTcyOTc1MzI0MSwicyI6Ijk5ODIzMzlkMDg1ZmMzYmNkYjk1ZjEwZjg2ODEwZGUwOTIwYTI3NTgiLCJ2IjoxfQ" type="video/mp4">  
 </video>
 ### Understanding Networks, the Internet, and the Web
