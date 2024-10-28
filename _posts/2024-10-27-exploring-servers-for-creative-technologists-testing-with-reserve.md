@@ -40,6 +40,22 @@ Navigate to your project directory and start Reserve by entering:
 reserve --http=0.0.0.0:8080  # Starts a server accessible on all local network devices
 ```
 
+### Step 3: Finding Your Local IP Address
+
+To access the server from other devices, find your local IP address by running:
+```bash
+ipconfig getifaddr en0  # for macOS; use `ipconfig` on Windows or `hostname -I` on Linux
+```
+Share your IP address and port (e.g., `http://192.168.x.x:8080`) with connected devices on the same network to access your content.
+
+### Step 4: Multi-Device Setup
+
+In this test, I set up three devices:
+
+- **iPad**: displaying a video file.
+- **Computer 1**: displaying a slideshow.
+- **Computer 2**: acting as the control center with broadcast capability.
+
 ### Your Project Files
 
 Below are three files used in the project, designed for testing a multi-device setup. **index.html** displays a slideshow, **video.html** plays a video, and **button.html** has a button to toggle fullscreen.
@@ -137,6 +153,10 @@ Below are three files used in the project, designed for testing a multi-device s
 </html>
 ```
 
+##### Why Wake Lock?
+
+In interactive installations, it's important to prevent devices from going to sleep during use. Adding a wake lock ensures the screens stay on, enhancing the user experience in immersive environments.
+
 #### `button.html` 
 
 ```html
@@ -166,3 +186,5 @@ Below are three files used in the project, designed for testing a multi-device s
 ### Broadcasting Across Devices
 
 With Reserve, once your server is live, you can share the `localhost` address across your devices (or use a tunneling tool like Localtunnel to share remotely). Reserve’s broadcasting feature lets every connected device instantly reflect any updates you make, allowing seamless testing and synchronized displays across multiple devices.
+
+The broadcast feature in Reserve allows devices to receive real-time updates simultaneously. For instance, if you update the slideshow or send a control command, all connected devices respond instantly. This is particularly useful for synchronized multi-screen experiences.
