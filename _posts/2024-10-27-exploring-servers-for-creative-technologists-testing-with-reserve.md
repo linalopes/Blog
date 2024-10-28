@@ -40,7 +40,7 @@ Navigate to your project directory and start Reserve by entering:
 reserve --http=0.0.0.0:8080  # Starts a server accessible on all local network devices
 ```
 
-### Step 3: Finding Your Local IP Address
+#### Step 3: Finding Your Local IP Address
 
 To access the server from other devices, find your local IP address by running:
 ```bash
@@ -48,7 +48,7 @@ ipconfig getifaddr en0  # for macOS; use `ipconfig` on Windows or `hostname -I` 
 ```
 Share your IP address and port (e.g., `http://192.168.x.x:8080`) with connected devices on the same network to access your content.
 
-### Step 4: Multi-Device Setup
+#### Step 4: Multi-Device Setup
 
 In this test, I set up three devices:
 
