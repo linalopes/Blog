@@ -13,6 +13,7 @@ tags:
 date: 2024-10-31
 author: lina
 ---
+
 ## Overview
 
 This experiment uses **ml5.js** for hand detection, **OSC (Open Sound Control)** messages to communicate commands, and an **ESP8266** to control a servo motor. The **Reserve** server serves the web interface, and **Ngrok** provides HTTPS access, allowing for both camera access and remote connectivity.
