@@ -4,7 +4,7 @@ title: Future Artifact - Radical Imagination with First-Year Design Students
 id: 2024-10-26-future-artifact-radical-imagination-with-first-year-design-students.md
 categories:
   - speculation
-image: https://live.staticflickr.com/65535/54118908215_34a849bdde_z.jpg
+image: https://live.staticflickr.com/65535/54118816824_b73216a770_z.jpg
 share: "true"
 comments: "true"
 filename: Blog/_posts/2024-10-26-future-artifact-radical-imagination-with-first-year-design-students.md
@@ -18,6 +18,8 @@ _This experience learning design was in partnership with Graziela Nivoloni, than
 I recently had the incredible opportunity to share the "Future Artifact" framework, a process of radical imagination, with first-year design students at the Istituto Europeo di Design in São Paulo (IED São Paulo), thanks to an invitation from Professor Grazi. Grazi teaches students across various design disciplines—graphic, digital, product, and fashion—and it was truly inspiring to witness these young creatives dive into the depths of imagination and speculative design.
 
 The session began with a three-hour workshop aimed at sparking new perspectives. With around 40 students, all around 20 years old, we delved into the concept of "Future Artifact." The approach invites students to choose a meaningful personal object and explore its emotional significance, history, and potential future transformations. Through this, they create artifacts that reflect personal and societal narratives—radical not in the sense of being extreme, but rooted in their own lives and in the research of the past.
+
+---
 
 <img src="https://live.staticflickr.com/65535/54118908215_34a849bdde_z.jpg" width="640" height="378" alt="Screenshot 2024-11-05 at 11.48.50"/>
 
@@ -52,6 +54,13 @@ This phase is an opportunity to let the imagination expand, generating multiple 
 Finally, participants choose one of these speculative ideas to develop further, creating a prototype and envisioning the context in which it exists. This prototype could represent a product, a new way of living, or even a service. The process remains open-ended and focuses on exploring the creative potential of each idea. The aim is to expand imagination freely at this stage before narrowing down to a final concept.
  
 ---
+
+<div style="display: flex; justify-content: center;">
+<img src="https://live.staticflickr.com/65535/54118943805_624cf3e57b_z.jpg" width="480" height="640" alt="IMG_7082.jpg" class="" />
+
+<img src="https://live.staticflickr.com/65535/54117623022_fdbb1a6ed5_z.jpg" width="480" height="640" alt="IMG_7083.jpg"/>
+</div>
+
 
 ## Back to the class
 
