@@ -4,8 +4,9 @@ title: Machine learning controlling a motor and multidevices in the same network
 id: 2024-10-31-machine-learning-controlling-a-motor-and-multidevices-in-the-same-network-preparing-for-an-exhibition-room.md
 categories:
   - documentation
-  - digital tools
-image: assets/images/gepeto.png
+  - prototype
+  - AI project
+image: https://live.staticflickr.com/65535/54118518841_e647960491_z.jpg
 share: "true"
 comments: "true"
 filename: Blog/_posts/2024-10-31-machine-learning-controlling-a-motor-and-multidevices-in-the-same-network-preparing-for-an-exhibition-room.md
@@ -13,6 +14,20 @@ tags:
 date: 2024-10-31
 author: lina
 ---
+**Disclaimer**: This post might be a bit complex, as it intersects with several previous entries. If at any point it seems confusing or you feel like you’re missing some context, please check those earlier posts for reference.
+
+---
+
+<img src="https://live.staticflickr.com/65535/54118980695_41f4b0cbd5_z.jpg" width="480" height="640" alt="Untitled"/>
+
+Today, I want to take you on a journey through a project that has evolved from a simple experiment back in 2020 into a layered exploration of AI and robotics in 2024. Let's begin with the origins: I built a small yellow robot back in 2020, which used to hang around, watching me during my Zoom calls. It was a quirky little companion, but nothing too elaborate. Fast-forward to today, I'm studying Machine Learning and AI for Creative Practices at the University of Bern, where I’m immersed in a module on sensors. This course explores using sensor data from the human body, often sourced from dancers, actors, and other performing artists. We use wearables and webcams to capture data from bodily movements and then feed it into Machine Learning models to explore new possibilities for artistic expression.
+
+For this module, I decided to bring my robot back to life by making it responsive to my hand movements. Using a pre-trained, stable model (MediaPipe) for hand recognition, I created a simple prototype: as I move my hand, the robot's servo motor changes its angle to match. From this initial experiment, I added multiple layers and improvements to refine the system—some of which I've detailed in other posts.
+
+First, I tackled the challenge of controlling the servo motor using the ESP8266. Managing the energy output effectively was key to ensuring smooth and accurate motor control. Next, I explored using Open Sound Control (OSC) to drive the servo motor. The OSC protocol allowed me to expand the system's flexibility, imagining scenarios where the robot could be integrated into a networked setup within an exhibition environment.
+
+_You can see the post [here](https://blog.linalopes.info/halloween-in-motion-understanding-motors-in-creative-technology/)_
+
 
 ## Overview
 
