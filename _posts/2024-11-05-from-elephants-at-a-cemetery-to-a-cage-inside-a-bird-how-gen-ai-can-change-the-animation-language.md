@@ -6,7 +6,7 @@ categories:
   - speculation
   - documentation
   - digital tools
-image: assets/images/gepeto.png
+image: https://live.staticflickr.com/65535/54122972355_99ff2ef6fd.jpg
 share: "true"
 comments: "true"
 filename: Blog/_posts/2024-11-05-from-elephants-at-a-cemetery-to-a-cage-inside-a-bird-how-gen-ai-can-change-the-animation-language.md
@@ -19,6 +19,8 @@ date: 2024-11-05
 author: lina
 ---
 On Tuesday, November 5th, I had the opportunity to attend a [workshop](https://tickets.da-z.net/en/events/generative-ai-workshop-2?c=AIWorkshop17) focused on using low-code tools to create workflows for generative image and video creation. The session introduced us to Amazon Bedrock—a tool I hadn't explored before—and ComfyUI, which proved to be one of the workshop's highlights.
+
+_Thanks Pajtim Matoshi, Luca Perrozi and Tobias Seidel for the opportunity🫀 _
 
 ### Initial Impressions of Amazon Bedrock
 
@@ -58,7 +60,7 @@ This tension between realism and imagination isn’t new; it echoes shifts in ar
 Similarly, I wonder whether these generative AI tools, by excelling at realism, might liberate us to focus on the imaginative. If they can generate realistic animations of "elephants kissing at a cemetery," perhaps we can shift our creative efforts toward surreal narratives, dreamlike landscapes, and otherworldly aesthetics.
 ### Discovering ComfyUI: A Visual Approach
 
-The standout tool of the session for me was **ComfyUI**. It’s an open-source, modular tool designed for generative workflows using a node-based interface. Sometimes referred to as “Box and Wires” or low-code, this approach enables users to build workflows visually, connecting modular blocks such as “load file,” “add prompt,” and “enhance output.”
+The standout tool of the session for me was [ComfyUI](https://www.comfy.org/). It’s an open-source, modular tool designed for generative workflows using a node-based interface. Sometimes referred to as “Box and Wires” or low-code, this approach enables users to build workflows visually, connecting modular blocks such as “load file,” “add prompt,” and “enhance output.”
 
 What made this experience even more impactful was the preparation by the instructors. They had pre-built workflows ready for us to test, which allowed us to jump straight into experimenting with ComfyUI. The ability to install ComfyUI on an AWS server rather than needing a local machine with a powerful GPU was particularly appealing. This cloud-based setup removes hardware limitations and makes generative AI experimentation more accessible.
 
