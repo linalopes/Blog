@@ -17,7 +17,7 @@ date: 2024-10-23
 author: lina
 ---
 
-<iframe width="380" height="676" src="https://www.youtube.com/embed/cPFE6IlUqrY?autoplay=1&loop=1" title="2024 10 Pulleying my heart" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen autoplay muted loop></iframe>
+<iframe width="380" height="676" src="https://www.youtube.com/embed/cPFE6IlUqrY?autoplay=1&loop=1" title="2024 10 Pulleying my heart" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 _This prototype is a partnership with my amazing husband and friend Fadri Pestalozzi 🫀_
 
 ### Understanding Networks, the Internet, and the Web
