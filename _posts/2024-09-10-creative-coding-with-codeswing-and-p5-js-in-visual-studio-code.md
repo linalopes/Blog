@@ -39,7 +39,7 @@ I was thrilled when I discovered [CodeSwing](https://marketplace.visualstudio.co
 
 Once you install the CodeSwing extension, it automatically sets up a workspace with HTML, CSS, and JavaScript files. You can preview everything directly in Visual Studio Code without needing to start a local server or switch to a separate browser window. This makes it perfect for rapid experimentation, quick prototyping, or even live-coding sessions with students.
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/200845412@N02/53991839928/in/dateposted-public/" title="Untitled"><img src="https://live.staticflickr.com/31337/53991839928_a120e56a58_h.jpg" width="1600" height="970" alt="Untitled"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/200845412@N02/53991839928/in/dateposted-public/" title="Untitled"><img src="https://live.staticflickr.com/31337/53991839928_a120e56a58_h.jpg" width="100%" alt="Untitled"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 ### Using p5.js with CodeSwing
 

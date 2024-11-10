@@ -15,6 +15,7 @@ tags:
   - sonic-pi
   - openai
   - python
+  - ai
 date: 2024-08-01
 author: lina
 ---

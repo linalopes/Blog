@@ -16,7 +16,7 @@ date: 2024-10-24
 author: lina
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DscH6dXy-6Q?si=YhOcXaCGVj_oXm4d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen autoplay muted></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DscH6dXy-6Q?si=YhOcXaCGVj_oXm4d?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ### Understanding Motors in Creative Technology
 
 A **motor** is a device that converts electrical energy into motion. It’s one of the key components in interactive projects, installations, and robotics, allowing us to add movement and life to our creations. Motors are everywhere, from the tiny motors in your phone's vibration system to large motors in industrial machinery.
@@ -56,10 +56,7 @@ One common solution is using **pulleys**.
 
 In this project, the pulleys are used to create a **tensioned string** system, acting as guides rather than driving the movement themselves. The pulleys create anchor points for the string, which is attached to the fingertip of a hand. As the servo motor rotates between 0 and 180 degrees, the string moves through the pulleys. This tension transfers the rotational motion of the servo to make the hand move up and down. The wrist is anchored to the surface, while the string tension amplifies the servo's half-rotation, creating the desired movement. This setup allows the servo's limited range of motion to effectively control a larger mechanical movement.
 
-<video width="50%" height="50%" controls muted autoplay>
-  <source src="https://live.staticflickr.com/video/54089607446/8404814351/1080p.mp4?s=eyJpIjo1NDA4OTYwNzQ0NiwiZSI6MTcyOTc1NjkzOCwicyI6IjMyNDVlZDFmZmM1NTBlNTMxMGFkYmJkYjdmZTMxYTkzNTcyNzc4ZjkiLCJ2IjoxfQ" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<iframe width="380" height="676" src="https://www.youtube.com/embed/FAYStAOTvaA?autoplay=1&loop=1" title="Strings attached" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 _This prototype is a partnership with my amazing husband and friend Fadri Pestalozzi 🫀_
 

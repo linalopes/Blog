@@ -16,6 +16,7 @@ tags:
   - arduino
   - motor
   - insects
+  - ai
 date: 2024-07-22
 author: lina
 ---
