@@ -16,10 +16,7 @@ date: 2024-10-24
 author: lina
 ---
 
-<video width="100%" height="100%" controls muted autoplay>
-  <source src="https://live.staticflickr.com/video/54090060365/213c0ebf36/1080p.mp4?s=eyJpIjo1NDA5MDA2MDM2NSwiZSI6MTcyOTc1NjYwOCwicyI6Ijc2MjYzYjA0MzdlNjkxMjE2Y2FmYjBmMTZhNThjODkzMmYxMDNjMzEiLCJ2IjoxfQ" type="video/mp4">
-</video>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DscH6dXy-6Q?si=YhOcXaCGVj_oXm4d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen autoplay muted></iframe>
 ### Understanding Motors in Creative Technology
 
 A **motor** is a device that converts electrical energy into motion. It’s one of the key components in interactive projects, installations, and robotics, allowing us to add movement and life to our creations. Motors are everywhere, from the tiny motors in your phone's vibration system to large motors in industrial machinery.

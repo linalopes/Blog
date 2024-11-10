@@ -20,7 +20,8 @@ author: lina
 
 # Some history...
 
-<img src="https://live.staticflickr.com/65535/54118980695_41f4b0cbd5_z.jpg" width="480" height="640" alt="Untitled"/>
+<iframe width="380" height="676" src="https://www.youtube.com/embed/GSMAnlBJSCw" title="10 November 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 Today, I want to take you on a journey through a project that has evolved from a simple experiment back in 2020 into a layered exploration of AI and robotics in 2024. Let's begin with the origins: I built a small yellow robot back in 2020, which used to hang around, watching me during my Zoom calls. It was a quirky little companion, but nothing too elaborate. Fast-forward to today, I'm studying Machine Learning and AI for Creative Practices at the University of Bern, where I’m immersed in a module on sensors. This course explores using sensor data from the human body, often sourced from dancers, actors, and other performing artists. We use wearables and webcams to capture data from bodily movements and then feed it into Machine Learning models to explore new possibilities for artistic expression.
 
