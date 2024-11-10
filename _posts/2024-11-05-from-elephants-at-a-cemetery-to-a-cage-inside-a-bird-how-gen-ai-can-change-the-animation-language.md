@@ -15,6 +15,7 @@ tags:
   - machine-learning
   - image
   - animation
+  - featured
 date: 2024-11-05
 author: lina
 ---
