@@ -78,3 +78,10 @@ In this case, scikit-image allowed me to delve into the essence of images, visua
 
 Whether you're working with scikit-image, p5.js, or another tool, the key is to keep asking questions. After all, art is as much about the questions as it is about the answers.
 
+### The Github repository
+[GitHub - linalopes/how-monalisa-isit](https://github.com/linalopes/how-monalisa-isit)
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/200845412@N02/albums/72177720321860820" title="2024 11 How much close to a piece of art?"><img src="https://live.staticflickr.com/31337/54133159795_7744382c9c_b.jpg" width="100%" alt="2024 11 How much close to a piece of art?"/></a>
+
+_Check the images on Flick_
+
