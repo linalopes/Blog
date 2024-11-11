@@ -3,18 +3,17 @@ layout: post
 title: From Pixels to Art – Exploring Creative Coding with scikit-image
 id: 2024-11-11-from-pixels-to-art-exploring-creative-coding-with-scikit-image.md
 categories:
-  - documentation
-  - digital tools
-  - data science
+  - datavis
+  - creative process
 image: https://live.staticflickr.com/65535/54131855752_c9d9183274_h.jpg
 share: "true"
 comments: "true"
 filename: Blog/_posts/2024-11-11-from-pixels-to-art-exploring-creative-coding-with-scikit-image.md
-tags: 
+tags:
+  - python
 date: 2024-11-11
 author: lina
 ---
-#### **Introduction**
 
 Creative coding is all about pushing the boundaries of what technology can create. Before Machine Learning (ML) and Generative AI became popular tools for creating digital art, generative art was already thriving on computers, fueled by libraries like p5.js. This week, as part of a course on Machine Learning for images taught by **Guillaume Witz** at the Bern Institute of Mathematics, I ventured into new territory using a Python library called **scikit-image**.
 
@@ -28,8 +27,7 @@ In this post, I’ll share the steps of this experiment, reflect on the differen
 
 <mark class="hltr-pink">These days I'm too much in data visualization</mark>. So, the first experiment focused on visualizing the data of an image. Specifically, the goal was to take the pixels of an image and reorganize them according to their RGB values. Starting with the two cats' photo, I created a visualization where the pixels were sorted from the darkest reds to the brightest blues, allowing the entire RGB spectrum to emerge.
 
-IMAGE HERE
-
+<img src="https://live.staticflickr.com/65535/54133185545_241e94c66f_h.jpg" width="100%" alt="comparison_high_res"/>
 
 This visualization raised an intriguing question: **"If I have the same pixels, can I recreate something as iconic as the Mona Lisa?"** This playful thought experiment set the stage for the second part of the project.
 
@@ -43,7 +41,10 @@ The results were surprising! The photo of the two cats turned out to have **99.5
 
 <img src="https://live.staticflickr.com/65535/54131855752_c9d9183274_h.jpg" width="100%" alt="Screenshot 2024-11-11 at 17.56.44"/>
 
-On the other hand, when comparing the same photo to a generated image of blue waves created in DALL-E, only **53% of the pixels matched**, suggesting that these waves were "less artistic" in this whimsical framework.
+On the other hand, when comparing a generated image of blue waves created in DALL-E with with the "Mona Lisa", only **34.46% of the pixels matched**, suggesting that these waves were "less artistic" in this whimsical framework. It was just a coincidence, but a funny one for sure!
+
+<img src="https://live.staticflickr.com/65535/54133076084_523dc6992d_b.jpg" width="100%" alt="azul"/>
+<img src="https://live.staticflickr.com/65535/54131855717_ce1a0b83cf_b.jpg" width="100%" alt="Screenshot 2024-11-11 at 17.57.15"/>
 
 The experiment wasn’t just about the visual outcomes—it was about the creative process and the ways data can be repurposed to spark new perspectives on art.
 
