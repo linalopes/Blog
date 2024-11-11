@@ -6,11 +6,11 @@ categories:
   - documentation
   - digital tools
   - data science
-image: assets/images/gepeto.png
+image: https://live.staticflickr.com/65535/54131855752_c9d9183274_h.jpg
 share: "true"
 comments: "true"
 filename: Blog/_posts/2024-11-11-from-pixels-to-art-exploring-creative-coding-with-scikit-image.md
-tags: []
+tags: 
 date: 2024-11-11
 author: lina
 ---
@@ -41,7 +41,7 @@ The second experiment introduced a new dimension: comparing the pixel data of tw
 
 The results were surprising! The photo of the two cats turned out to have **99.51% of the same pixels as the Mona Lisa**. This sparked a humorous observation: perhaps the two cats _are_ a work of art! 
 
-IMAGE HERE
+<img src="https://live.staticflickr.com/65535/54131855752_c9d9183274_h.jpg" width="100%" alt="Screenshot 2024-11-11 at 17.56.44"/>
 
 On the other hand, when comparing the same photo to a generated image of blue waves created in DALL-E, only **53% of the pixels matched**, suggesting that these waves were "less artistic" in this whimsical framework.
 
@@ -71,8 +71,9 @@ While scikit-image lacks the interactive, real-time capabilities of p5.js, its s
 
 #### **Conclusion**
 
-The most exciting part of this experiment wasn’t the tools themselves but the questions they enabled me to explore. Whether it’s scikit-image or p5.js, the best tool is always the one you have and know how to use. Tools are just extensions of our curiosity, and their value lies in the ways they help us shape new ideas and perspectives.
+**The most exciting part of this experiment wasn’t the tools themselves but the questions they enabled me to explore**. Whether it’s scikit-image or p5.js, the best tool is always the one you have and know how to use. Tools are just extensions of our curiosity, and their value lies in the ways they help us shape new ideas and perspectives.
 
 In this case, scikit-image allowed me to delve into the essence of images, visualizing their pixel structures and rethinking what makes something "art." These experiments taught me that a simple photo of two cats can contain the seeds of creativity—just like any tool or dataset in the hands of a curious mind.
 
 Whether you're working with scikit-image, p5.js, or another tool, the key is to keep asking questions. After all, art is as much about the questions as it is about the answers.
+
