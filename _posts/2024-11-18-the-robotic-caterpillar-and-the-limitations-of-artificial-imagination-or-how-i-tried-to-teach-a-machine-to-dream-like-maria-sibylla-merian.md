@@ -24,9 +24,9 @@ There’s something magical about the obsessive gaze of Maria Sibylla Merian. Th
 This is the heart of my project, _Metamorphoses Reimagined_: a collision between the scientific rigor of Maria Sibylla Merian and the speculative, fantastical designs of a future that exists only in the radical imagination. And to explore this world, I turned to artificial intelligence—not as a tool, but as a co-pilot for dreaming.
 
 <div style="display: flex; justify-content: center;">
-<img src="https://digitalcollections.amnh.org/Assets/V2/ChFBTjFTNTAwMDAwMDAwMDAwMhIDVFIxGihcVFIxXGIyXGE2XGU5XDc2XDhhXHYxX0FOMVxBTjEyMzA2NjguanBnIgQIARAPQAFiCUFOMTIzMDY2OA--~/2URM1T9PMARU/a9NQxle4I1xnyi8n/AN1230668.jpg" width="380">
+<img src="https://upload.wikimedia.org/wikipedia/en/b/b7/Maria_Sibylla_Merian_Maulbeerbaum_samt_Frucht_plate_1.png" width="380">
 
-<img src="https://digitalcollections.amnh.org/Assets/V2/ChFBTjFTNTAwMDAwMDAwMDAwMhIDVFIxGihcVFIxXDk2XDAyXGFiXGI1XGM1XHYxX0FOMVxBTjEyMzA5OTkuanBnIgQIARAPQAFiCUFOMTIzMDk5OQ--~/2URM1T9P5VZ4/aE4kO42FWiN3cleT/AN1230999.jpg" width="380"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Joseph_Mulder_etching_1.jpg" width="380"/>
 </div>
 _[Digital Collections | AMNH - Insects by Maria Sibylla Merian](https://digitalcollections.amnh.org/archive/Insects-by-Maria-Sibylla-Merian-2URM1T9QAH87.html)_
 
