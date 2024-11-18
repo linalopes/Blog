@@ -26,7 +26,7 @@ This is the heart of my project, _Metamorphoses Reimagined_: a collision between
 <div style="display: flex; justify-content: center;">
 <img src="https://digitalcollections.amnh.org/Assets/V2/ChFBTjFTNTAwMDAwMDAwMDAwMhIDVFIxGihcVFIxXGIyXGE2XGU5XDc2XDhhXHYxX0FOMVxBTjEyMzA2NjguanBnIgQIARAPQAFiCUFOMTIzMDY2OA--~/2URM1T9PMARU/a9NQxle4I1xnyi8n/AN1230668.jpg" width="380">
 
-<img src="https://digitalcollections.amnh.org/Assets/V2/ChFBTjFTNTAwMDAwMDAwMDAwMhIDVFIxGihcVFIxXDk2XDAyXGFiXGI1XGM1XHYxX0FOMVxBTjEyMzA5OTkuanBnIgQIARAPQAFiCUFOMTIzMDk5OQ--~/2URM1T9P5VZ4/aE4kO42FWiN3cleT/AN1230999.jpg" width="380" alt="IMG_7083.jpg"/>
+<img src="https://digitalcollections.amnh.org/Assets/V2/ChFBTjFTNTAwMDAwMDAwMDAwMhIDVFIxGihcVFIxXDk2XDAyXGFiXGI1XGM1XHYxX0FOMVxBTjEyMzA5OTkuanBnIgQIARAPQAFiCUFOMTIzMDk5OQ--~/2URM1T9P5VZ4/aE4kO42FWiN3cleT/AN1230999.jpg" width="380"/>
 </div>
 _[Digital Collections | AMNH - Insects by Maria Sibylla Merian](https://digitalcollections.amnh.org/archive/Insects-by-Maria-Sibylla-Merian-2URM1T9QAH87.html)_
 
