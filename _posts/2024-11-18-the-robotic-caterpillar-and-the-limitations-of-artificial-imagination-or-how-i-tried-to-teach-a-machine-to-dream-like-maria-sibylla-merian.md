@@ -23,8 +23,12 @@ There’s something magical about the obsessive gaze of Maria Sibylla Merian. Th
 
 This is the heart of my project, _Metamorphoses Reimagined_: a collision between the scientific rigor of Maria Sibylla Merian and the speculative, fantastical designs of a future that exists only in the radical imagination. And to explore this world, I turned to artificial intelligence—not as a tool, but as a co-pilot for dreaming.
 
+<div style="display: flex; justify-content: center;">
+<img src="https://digitalcollections.amnh.org/Assets/V2/ChFBTjFTNTAwMDAwMDAwMDAwMhIDVFIxGihcVFIxXGIyXGE2XGU5XDc2XDhhXHYxX0FOMVxBTjEyMzA2NjguanBnIgQIARAPQAFiCUFOMTIzMDY2OA--~/2URM1T9PMARU/a9NQxle4I1xnyi8n/AN1230668.jpg" width="380">
 
-<img src="https://digitalcollections.amnh.org/Assets/V2/ChFBTjFTNTAwMDAwMDAwMDAwMhIDVFIxGihcVFIxXGIyXGE2XGU5XDc2XDhhXHYxX0FOMVxBTjEyMzA2NjguanBnIgQIARAPQAFiCUFOMTIzMDY2OA--~/2URM1T9PMARU/a9NQxle4I1xnyi8n/AN1230668.jpg">
+<img src="https://digitalcollections.amnh.org/Assets/V2/ChFBTjFTNTAwMDAwMDAwMDAwMhIDVFIxGihcVFIxXDk2XDAyXGFiXGI1XGM1XHYxX0FOMVxBTjEyMzA5OTkuanBnIgQIARAPQAFiCUFOMTIzMDk5OQ--~/2URM1T9P5VZ4/aE4kO42FWiN3cleT/AN1230999.jpg" width="380" alt="IMG_7083.jpg"/>
+</div>
+_[Digital Collections | AMNH - Insects by Maria Sibylla Merian](https://digitalcollections.amnh.org/archive/Insects-by-Maria-Sibylla-Merian-2URM1T9QAH87.html)_
 
 ## **The First Step: Training a Machine to See Like Merian**
 
@@ -54,6 +58,8 @@ AI models like FLUX.1 and Stable Diffusion generate images by working within a *
 
 This semantic gap explains why my prompts failed to materialize as I’d imagined. The machine couldn’t grasp the metaphor of solar panels as wings; it couldn’t weave together the poetic strands of nature and technology in the way I’d hoped. Diffusion models are brilliant at literalism but falter in the face of abstraction. They can mimic reality, but they stumble when asked to dream.
 
+<img src="https://live.staticflickr.com/65535/54148295896_043fdc8442_b.jpg">
+
 ---
 
 ## **The Next Step: A Pipeline of Dreams**
@@ -72,3 +78,6 @@ By layering these models, I could perhaps bridge the semantic gap, creating imag
 This journey has been as much about the limitations of AI as its possibilities. Machines, for all their power, are not inherently imaginative. They are copilots, yes, but copilots who rely on us to chart the course. And perhaps that’s the beauty of it. The tension between what the machine can and cannot do becomes a site of creative exploration—a dialogue between human and machine, where the gaps and failures are as generative as the successes.
 
 In _Metamorphoses Reimagined_, I see a reflection of my own desire to push beyond the limits of the possible, to imagine worlds that blur the boundaries between science, art, and technology. And while AI has yet to fully understand the poetry of a solar-paneled butterfly, it has shown me glimpses of what might be possible. This, I think, is where the radical imagination begins: not in perfect execution, but in the struggle to teach machines to dream.
+
+## Test the model on Replicate
+- [dslteaching/maria-sybilla-merian-style – Run with an API on Replicate](https://replicate.com/dslteaching/maria-sybilla-merian-style)
