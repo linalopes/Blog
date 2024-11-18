@@ -6,7 +6,7 @@ categories:
   - speculation
   - digital tools
   - AI project
-image: assets/images/gepeto.png
+image: https://live.staticflickr.com/65535/54148295896_043fdc8442_b.jpg
 share: "true"
 comments: "true"
 filename: Blog/_posts/2024-11-18-the-robotic-caterpillar-and-the-limitations-of-artificial-imagination-or-how-i-tried-to-teach-a-machine-to-dream-like-maria-sibylla-merian.md
@@ -16,15 +16,17 @@ tags:
 date: 2024-11-18
 author: lina
 ---
+
 There’s something magical about the obsessive gaze of Maria Sibylla Merian. The way she documented the metamorphosis of insects and their symbiotic dance with plants feels almost alchemical. Her 17th-century illustrations, they’re both scientific evidence and poetry, rooted in reality yet teetering on the edge of the fantastic.
 
 **What happens when we take that gaze—Merian’s meticulous curiosity—and project it into a future or a parallel universe?** What would her illustrations look like if the plants and insects she so lovingly drew had undergone their own metamorphosis, merging biology and technology? Could we imagine a caterpillar whose segmented body gleamed with robotic joints, or a swarm of butterflies whose wings doubled as shimmering solar panels, quietly harvesting energy in a symbiotic relationship with the sun?
 
 This is the heart of my project, _Metamorphoses Reimagined_: a collision between the scientific rigor of Maria Sibylla Merian and the speculative, fantastical designs of a future that exists only in the radical imagination. And to explore this world, I turned to artificial intelligence—not as a tool, but as a co-pilot for dreaming.
 
----
 
-### **The First Step: Training a Machine to See Like Merian**
+<img src="https://digitalcollections.amnh.org/Assets/V2/ChFBTjFTNTAwMDAwMDAwMDAwMhIDVFIxGihcVFIxXGIyXGE2XGU5XDc2XDhhXHYxX0FOMVxBTjEyMzA2NjguanBnIgQIARAPQAFiCUFOMTIzMDY2OA--~/2URM1T9PMARU/a9NQxle4I1xnyi8n/AN1230668.jpg">
+
+## **The First Step: Training a Machine to See Like Merian**
 
 My journey began with a question: could I teach a machine to adopt Merian’s obsessive eye for detail? Could I make it replicate her aesthetic, her balance of science and art? I started with 46 images of her original work, curated like precious artifacts, and fed them into a platform called [Replicate](https://replicate.com).
 
@@ -32,7 +34,7 @@ Replicate, for those unfamiliar, is a kind of playground for machine learning—
 
 ---
 
-### **The Prompts: Asking a Machine to Imagine**
+## **The Prompts: Asking a Machine to Imagine**
 
 With my fine-tuned model in hand, I began experimenting with prompts, pushing the AI to step into this speculative universe.
 
@@ -42,11 +44,11 @@ With my fine-tuned model in hand, I began experimenting with prompts, pushing th
 
 But here’s where things got complicated. The machine, despite its newfound ability to emulate Merian’s style, struggled to combine concepts. The butterflies it produced were beautiful but mundane—entirely winged, entirely organic. The caterpillars remained grounded in biology, refusing to don their robotic armor. And the solar panels? They seemed to vanish entirely, as if the machine couldn’t reconcile their modernity with the 17th-century naturalism of Merian’s world.
 
-I started to wonder: why? Was it a failure of the model, or of my prompts? Or was it something deeper—something about the limits of artificial imagination itself?
+**I started to wonder: why? Was it a failure of the model, or of my prompts?** Or was it something deeper—something about the limits of artificial imagination itself?
 
 ---
 
-### **The Nature of Diffusion Models: A Semantic Struggle**
+## **The Nature of Diffusion Models: A Semantic Struggle**
 
 AI models like FLUX.1 and Stable Diffusion generate images by working within a **semantic space**—a kind of conceptual map where words and ideas live, connected by their meanings. But not all connections are created equal. In this space, "butterfly" might be near "flower" or "leaf," but "solar panel"? That’s a distant star, lightyears away in a technological galaxy.
 
@@ -54,7 +56,7 @@ This semantic gap explains why my prompts failed to materialize as I’d imagine
 
 ---
 
-### **The Next Step: A Pipeline of Dreams**
+## **The Next Step: A Pipeline of Dreams**
 
 If this project has taught me anything, it’s that AI isn’t yet a single, omniscient storyteller. Instead, it’s a collaborative orchestra—different models playing different instruments, each contributing to a larger symphony. Perhaps the key to merging Merian’s style with speculative design lies in building a **pipeline of models**:
 
@@ -65,7 +67,7 @@ By layering these models, I could perhaps bridge the semantic gap, creating imag
 
 ---
 
-### **Reflections on the Radical Imagination**
+## **Reflections on the Radical Imagination**
 
 This journey has been as much about the limitations of AI as its possibilities. Machines, for all their power, are not inherently imaginative. They are copilots, yes, but copilots who rely on us to chart the course. And perhaps that’s the beauty of it. The tension between what the machine can and cannot do becomes a site of creative exploration—a dialogue between human and machine, where the gaps and failures are as generative as the successes.
 
