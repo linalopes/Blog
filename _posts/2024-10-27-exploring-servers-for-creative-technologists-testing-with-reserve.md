@@ -28,24 +28,26 @@ In web-based creative technology projects, a server is essential for serving fil
 
 #### Step 1: Installation
 
-To install Reserve, open your terminal, navigate to the directory where you want to install it, and run:
+To install Reserve, open your terminal, navigate to the directory where you want to install it, and run (Install with Homebrew):
 ```bash
-brew install s4y/tap/reserve  # Install with Homebrew
+brew install s4y/tap/reserve
 ```
 
 #### Step 2: Start the Server
 
 Navigate to your project directory and start Reserve by entering:
 ```bash
-reserve --http=0.0.0.0:8080  # Starts a server accessible on all local network devices
+reserve --http=0.0.0.0:8080  
 ```
-
+Starts a server accessible on all local network devices
 #### Step 3: Finding Your Local IP Address
 
 To access the server from other devices, find your local IP address by running:
 ```bash
-ipconfig getifaddr en0  # for macOS; use `ipconfig` on Windows or `hostname -I` on Linux
+ipconfig getifaddr en0  
 ```
+For macOS; use `ipconfig` on Windows or `hostname -I` on Linux
+
 Share your IP address and port (e.g., `http://192.168.x.x:8080`) with connected devices on the same network to access your content.
 
 #### Step 4: Multi-Device Setup
