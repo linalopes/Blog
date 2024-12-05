@@ -30,7 +30,7 @@ In web-based creative technology projects, a server is essential for serving fil
 
 To install Reserve, open your terminal, navigate to the directory where you want to install it, and run (Install with Homebrew):
 ```bash
-brew install s4y/tap/reserve
+brew install s4y/reserve/reserve
 ```
 
 #### Step 2: Start the Server
