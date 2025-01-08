@@ -11,6 +11,7 @@ filename: Blog/_posts/2024-12-20-taming-wild-robots-a-creative-journey-with-robo
 tags:
   - machine-learning
   - robot
+  - ai
 date: 2024-12-20
 author: lina
 ---
