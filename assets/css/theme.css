@@ -33,6 +33,8 @@ h1, h2, h3, h4, h5, h6,
 	font-family: var(--font-family-title) !important;
 	font-weight: 600;
 	color: var(--color-brand-deep-purple);
+	margin-bottom: 1rem;  /* Space after title */
+	line-height: 1.4;
 }
 
 /* Code blocks - Courier Prime */
@@ -50,6 +52,14 @@ aside h5 {
 	font-family: var(--font-family-title) !important;
 	font-weight: 700;
 	color: var(--color-brand-deep-purple);
+	margin-bottom: 1rem;  /* Space below sidebar headings */
+}
+
+/* === FEATURED SIDEBAR - More space === */
+.sidebar .card,
+aside .card {
+	padding: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 .site-content {
 	margin-top: 50px; /* Added breathing room below navbar */
@@ -75,6 +85,7 @@ img {
 	aspect-ratio: 4 / 3;
 	object-fit: cover;
 	width: 100%;
+	margin-bottom: 1rem;  /* Space below image */
 }
 .tofront {
 	position:relative;
@@ -508,10 +519,11 @@ section, .section {
 .bg-lightblue {
 	fill:var(--color-lightblue) !important;
 }
-/* Card spacing consistency */
-/* Card spacing consistency */
+/* === MAIN LOOP CARDS (All Stories section) === */
+.main-loop-card,
 .card {
-	padding: var(--spacing-lg);
+	padding: 2rem !important;  /* Increased from var(--spacing-lg) for more breathing room */
+	margin-bottom: 2.5rem;  /* Space between cards */
 	transition: all 0.3s ease;
 }
 .card-body {
@@ -523,10 +535,6 @@ section, .section {
 	box-shadow: 0 8px 24px rgba(234, 125, 255, 0.25);
 }
 /* Card hover effects */
-.main-loop-card,
-.card {
-	transition: all 0.3s ease;
-}
 .main-loop-card:hover,
 .card:hover {
 	transform: translateY(-4px);
@@ -781,9 +789,9 @@ ol.list-featured li:before {
 .catlist {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 0.5rem;
-	margin-top: 0.75rem;
-	margin-bottom: 0.5rem;
+	gap: 0.5rem;  /* Reduced from 0.75rem for tighter spacing */
+	margin-top: 1rem;  /* Increased space above badges */
+	margin-bottom: 0.75rem;  /* Increased from 0.5rem */
 }
 
 /* Hide comma separators */
@@ -797,15 +805,16 @@ ol.list-featured li:before {
 	background: white;
 	color: var(--color-brand-deep-purple);
 	border: 2px solid var(--color-brand-turquoise);
-	padding: 6px 14px;
+	padding: 5px 12px;  /* Reduced from 8px 16px for smaller, more refined badges */
 	border-radius: 4px;
-	font-size: 0.75rem;
+	font-size: 0.7rem;  /* Reduced from 0.75rem */
 	font-weight: 600;
 	text-transform: uppercase;
-	letter-spacing: 0.8px;
+	letter-spacing: 0.5px;  /* Reduced from 0.8px */
 	text-decoration: none;
 	transition: all 0.2s ease;
 	font-family: var(--font-family-sans);
+	margin-bottom: 0.5rem;  /* Allow wrap with space */
 }
 
 /* HOVER STATE - Pink background, white text */
@@ -852,12 +861,21 @@ footer {
 }
 .excerpt {
     color: rgba(0, 0, 0, 0.5);
-    line-height: 1.6;
+    line-height: 1.7;  /* Increased from 1.6 for better readability */
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     margin-top:var(--spacing-excerpt-margin-top);
+    margin-bottom: 1.25rem;  /* Space after excerpt */
+}
+
+/* Card paragraphs - more spacing */
+.main-loop-card .excerpt,
+.card .excerpt,
+.card p {
+	margin-bottom: 1.25rem;  /* Space after excerpt/paragraph */
+	line-height: 1.7;  /* More readable */
 }
 /* Reading time badge */
 .reading-time {
@@ -877,6 +895,8 @@ small.text-muted {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 500;
+	display: block;
+	margin-top: 0.75rem;  /* Space above metadata */
 }
 article {
 	font-size:var(--font-size-article);

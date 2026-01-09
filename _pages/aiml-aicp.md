@@ -1,5 +1,5 @@
 ---
-title: AI and Machine Learning
+title: School of Tomorrow's AI
 paragraph: Hi! Welcome to the radical imagination to use AI and Machine Learning
 layout: page-sidebar-sticky
 permalink: /aiml-aicp.html
