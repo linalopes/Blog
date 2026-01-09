@@ -21,7 +21,6 @@ h1, h2, h3, h4, h5, h6,
 /* Navbar brand - Space Grotesk */
 .navbar-brand {
 	font-family: var(--font-family-title) !important;
-	font-weight: 700;
 	color: var(--color-brand-deep-purple) !important;
 }
 
@@ -894,8 +893,6 @@ footer {
 .text-muted,
 small.text-muted {
 	font-size: 0.875rem;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	font-weight: 500;
 	display: block;
 }
