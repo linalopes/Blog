@@ -789,9 +789,10 @@ ol.list-featured li:before {
 .catlist {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 0.5rem;  /* Reduced from 0.75rem for tighter spacing */
+	gap: 0.5rem;  /* Horizontal and vertical spacing between badges */
 	margin-top: 1rem;  /* Increased space above badges */
 	margin-bottom: 0.75rem;  /* Increased from 0.5rem */
+	align-items: flex-start;  /* Align badges to top */
 }
 
 /* Hide comma separators */
@@ -804,26 +805,26 @@ ol.list-featured li:before {
 	display: inline-block;
 	background: white;
 	color: var(--color-brand-deep-purple);
-	border: 2px solid var(--color-brand-turquoise);
-	padding: 5px 12px;  /* Reduced from 8px 16px for smaller, more refined badges */
-	border-radius: 4px;
-	font-size: 0.7rem;  /* Reduced from 0.75rem */
-	font-weight: 600;
+	border: 1px solid var(--color-brand-turquoise);  /* Very thin border */
+	padding: 2px 4px;  /* Small but readable */
+	border-radius: 4px;  /* Keep current radius */
+	font-size: 0.6rem;  /* Small but visible */
+	font-weight: 300;  /* Very light font-weight (delicate) */
 	text-transform: uppercase;
-	letter-spacing: 0.5px;  /* Reduced from 0.8px */
+	letter-spacing: 0.5px;
 	text-decoration: none;
 	transition: all 0.2s ease;
 	font-family: var(--font-family-sans);
-	margin-bottom: 0.5rem;  /* Allow wrap with space */
+	margin-bottom: 0;  /* Remove extra vertical spacing - gap handles it */
 }
 
-/* HOVER STATE - Pink background, white text */
+/* HOVER STATE - Pink border, keep background white */
 .catlist a:hover {
-	background: var(--color-brand-pink);
-	border-color: var(--color-brand-pink);
-	color: white !important;
+	background: white;  /* Keep white background */
+	border-color: var(--color-brand-pink);  /* Border becomes pink on hover */
+	color: var(--color-brand-deep-purple);  /* Keep text color */
 	transform: translateY(-2px);
-	box-shadow: 0 6px 16px rgba(234, 125, 255, 0.4);
+	box-shadow: 0 4px 12px rgba(234, 125, 255, 0.2);  /* Subtle shadow */
 	text-decoration: none;
 }
 
@@ -838,7 +839,8 @@ ol.list-featured li:before {
 aside .catlist a {
 	font-size: 0.7rem;
 	padding: 4px 10px;
-	border-width: 1.5px;
+	border-width: 1px;  /* Very thin border to match main badges */
+	font-weight: 300;  /* Very light font-weight (delicate) */
 }
 
 /* Mobile responsive */
@@ -896,7 +898,6 @@ small.text-muted {
 	letter-spacing: 1px;
 	font-weight: 500;
 	display: block;
-	margin-top: 0.75rem;  /* Space above metadata */
 }
 article {
 	font-size:var(--font-size-article);
