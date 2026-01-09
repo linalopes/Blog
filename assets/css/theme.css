@@ -13,9 +13,9 @@ body {
 /* All headings - Space Grotesk */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-	font-family: var(--font-family-title) !important;
+	font-family: var(--font-family-mono) !important;
 	color: var(--color-brand-deep-purple);
-	font-weight: 600;
+	font-weight: 500;
 }
 
 /* Navbar brand - Space Grotesk */
@@ -29,11 +29,11 @@ h1, h2, h3, h4, h5, h6,
 .card h3,
 .card h4,
 .main-loop-card h2 {
-	font-family: var(--font-family-title) !important;
-	font-weight: 600;
+	font-family: var(--font-family-mono) !important;
+	font-weight: 500;
 	color: var(--color-brand-deep-purple);
 	margin-bottom: 1rem;  /* Space after title */
-	line-height: 1.4;
+	line-height: 1.2;
 }
 
 /* Code blocks - Courier Prime */
@@ -41,6 +41,33 @@ code,
 pre,
 .code-container {
 	font-family: var(--font-family-mono) !important;
+}
+
+/* ============================================
+   CODE COPY BUTTON
+   ============================================ */
+
+.code-container {
+	position: relative;
+}
+
+.copy-button {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+	background-color: var(--color-brand-pink);
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	font-size: 0.75rem;
+	border-radius: var(--radius-base);
+	transition: background-color 0.2s ease;
+	font-family: var(--font-family-sans);
+}
+
+.copy-button:hover {
+	background-color: var(--color-brand-turquoise);
 }
 
 /* Category badges font - defined in full styles below */
@@ -1046,7 +1073,26 @@ article h3 {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 }
-/* Card titles - improved hierarchy */
+/* ============================================
+   CARD TITLES - Semantic and Clear
+   ============================================ */
+
+/* Main card titles (h2 with proper styling) */
+.card-title {
+	font-size: var(--font-size-xl);  /* 1.5rem - appropriate for card titles */
+	font-weight: var(--font-weight-semibold);
+	color: var(--color-brand-deep-purple);
+	line-height: 1.4;
+}
+
+/* Smaller card titles for featured posts */
+.card-title-small {
+	font-size: var(--font-size-md);  /* 1.15rem - smaller for secondary cards */
+	color: var(--color-brand-deep-purple);
+	line-height: 1.1;
+}
+
+/* Legacy support - remove after confirming all instances updated */
 .h4, h2.h4 {
 	font-weight: var(--font-weight-semibold);
 	color: var(--color-brand-deep-purple);

@@ -229,6 +229,7 @@ function gotResult(error, results) {
     - Ensure the Arduino receives commands and servos move accordingly.
 
 ## GitHub Repository
+
 https://github.com/linalopes/taming-robovitch/tree/main
 
 Happy coding!
