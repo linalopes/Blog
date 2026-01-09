@@ -854,6 +854,77 @@ footer {
 	z-index:var(--z-index-footer);
 	position:relative;
 }
+
+/* ============================================
+   MINIMAL FOOTER
+   ============================================ */
+
+.footer-minimal {
+	background: white;
+	border-top: 1px solid var(--color-brand-gray-green);
+	padding: 2rem 0;
+	margin-top: 4rem;
+	font-size: 0.875rem;
+	color: var(--color-brand-deep-purple);
+	font-family: var(--font-family-sans);
+}
+
+.footer-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.footer-text,
+.footer-copyright {
+	color: var(--color-brand-deep-purple);
+}
+
+.footer-divider {
+	color: var(--color-brand-gray-green);
+	margin: 0 0.25rem;
+}
+
+.footer-links {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.footer-links a {
+	color: var(--color-brand-pink);
+	text-decoration: none;
+	transition: color 0.2s ease;
+	font-size: 1rem;
+}
+
+.footer-links a:hover {
+	color: var(--color-brand-turquoise);
+}
+
+/* Icon links */
+.footer-links a i {
+	font-size: 1.1rem;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+	.footer-content {
+		flex-direction: column;
+		text-align: center;
+		gap: 0.75rem;
+	}
+
+	.footer-divider {
+		display: none;
+	}
+
+	.footer-links {
+		margin-top: 0.5rem;
+	}
+}
 .sticky-top-offset {
 	top:var(--spacing-sticky-offset);
 }
@@ -861,7 +932,7 @@ footer {
 	display:none !important;
 }
 .excerpt {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.65);  /* Better contrast for WCAG AA compliance, still subtle */
     line-height: 1.7;  /* Increased from 1.6 for better readability */
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -920,16 +991,6 @@ article li {
 	line-height: 1.8;
 	color: rgba(34, 17, 62, 0.9);
 	margin-bottom: 1.5rem;
-}
-/* Drop cap no primeiro parágrafo */
-article > p:first-of-type::first-letter {
-	float: left;
-	font-size: 5em;
-	line-height: 0.9;
-	margin: 0.1em 0.1em 0 0;
-	font-family: var(--font-family-serif);
-	color: var(--color-brand-pink);
-	font-weight: 700;
 }
 article pre,article figure,article img,article iframed,article embed {
 	margin-bottom:2rem;

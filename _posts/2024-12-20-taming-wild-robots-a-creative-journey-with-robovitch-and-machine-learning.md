@@ -73,7 +73,8 @@ As a designer, educator, or creative technologist, think of the possibilities:
 ---
 
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/200845412@N02/albums/72177720323049067" title="2024 12 Taming Wild Robots"><img src="https://live.staticflickr.com/65535/54254497698_2f948d7501.jpg" width="640" height="480" alt="2024 12 Taming Wild Robots"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/200845412@N02/albums/72177720323049067" title="2024 12 Taming Wild Robots"><img src="https://live.staticflickr.com/65535/54254497698_2f948d7501.jpg" width="640" height="480" alt="2024 12 Taming Wild Robots"/></a>
+
 ## **The Technical Breakdown**
 
 Let's break down the technical details, step by step:
@@ -146,6 +147,7 @@ function draw() {
     
     - Connect three servo motors to pins 9, 10, and 11.
     - Upload the following code to the Arduino:
+
 ```cpp
 #include <Servo.h>
 
@@ -192,6 +194,7 @@ void curiousPose() {
 
 1. **Modify p5.js Code**:
     - Add serial communication to send commands based on the detected gesture:
+
 ```javascript
 let serial;
 
