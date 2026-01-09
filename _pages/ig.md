@@ -7,7 +7,7 @@ image: /assets/images/gepeto.png
 comments: true
 searchTag: IG
 tags:
-  - sticky
+
 ---
 
 
@@ -23,10 +23,3 @@ Acompanhe nosso podcast e blog para seguir nossa jornada criativa e descobrir co
 **Lina Lopes, Nathan Rabinovitch e Recy Freire** são especialistas em aprendizagem criativa, tendo colaborado em diversos projetos educacionais. Com uma sólida experiência na criação de materiais educativos, eles trazem uma abordagem inovadora e prática para o desenvolvimento do livro "A Infância de Gepetto".
 
 # *
-
-
-
-
-
-
-

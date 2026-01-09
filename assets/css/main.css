@@ -8503,7 +8503,7 @@ html {
   color: var(--pink);
   text-align: center;
   padding: 10px;
-  border-radius: 50px;
+  border-radius: 4px;
   cursor: pointer;
   font-size: 20px;
 }

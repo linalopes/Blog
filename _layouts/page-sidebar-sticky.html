@@ -5,9 +5,9 @@ layout: default
 <h3 class="spanborder"><span>{{page.title}}</span></h3>
 <div class="row">
     <div class="col-md-8">
-    {% if page.image %} 
-    <img class="card-img-top mb-5 shadow-lg" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | absolute_url }}{% endif %}" alt="{{ page.title }}"> 
-    {% endif %} 
+    {% if page.image %}
+    <img class="card-img-top mb-5 shadow-lg" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | absolute_url }}{% endif %}" alt="{{ page.title }}">
+    {% endif %}
     <div class="page-content">
         {{ content }}
 
@@ -23,7 +23,7 @@ layout: default
         <div class="mt-5">
             <!-- Pagination links -->
             {% if paginator.total_pages > 1 %}
-            <ul class="pagination"> 
+            <ul class="pagination">
                 {% if paginator.previous_page %}
                     <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
                 {% else %}
@@ -46,7 +46,7 @@ layout: default
                     <li class="page-item disabled"><span class="next page-link">&raquo;</span></li>
                 {% endif %}
             </ul>
-            {% endif %}      
+            {% endif %}
         </div>
 
         <!-- Comments -->
@@ -55,9 +55,5 @@ layout: default
         {% endif %}
     </div>
     </div>
-    <div class="col-md-4">
-        {% include sidebar-sticky.html %}
-    </div>
-</div>  
 </div>
-
+</div>

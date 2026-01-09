@@ -230,6 +230,6 @@ function gotResult(error, results) {
 
 ## GitHub Repository
 
-https://github.com/linalopes/taming-robovitch/tree/main
+[https://github.com/linalopes/taming-robovitch/tree/main](https://github.com/linalopes/taming-robovitch/tree/main)
 
 Happy coding!
