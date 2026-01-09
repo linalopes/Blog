@@ -7,7 +7,7 @@ $(function() {
         $( "body" ).removeClass( "modal-open" );
     });
 });
-    
+
 {% assign counter = 0 %}
 var documents = [{% for page in site.pages %}{% if page.url contains '.xml' or page.url contains 'assets' %}{% else %}{
     "id": {{ counter }},
@@ -37,11 +37,11 @@ var idx = lunr(function () {
 });
 
 
-    
+
 function lunr_search(term) {
     $('#lunrsearchresults').show( 1000 );
     $( "body" ).addClass( "modal-open" );
-    
+
     document.getElementById('lunrsearchresults').innerHTML = '<div id="resultsmodal" class="modal fade show d-block"  tabindex="-1" role="dialog" aria-labelledby="resultsmodal"> <div class="modal-dialog shadow-lg" role="document"> <div class="modal-content"> <div class="modal-header" id="modtit"> <button type="button" class="close" id="btnx" data-dismiss="modal" aria-label="Close"> &times; </button> </div> <div class="modal-body"> <ul class="mb-0"> </ul>    </div> <div class="modal-footer"><button id="btnx" type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button></div></div> </div></div>';
     if(term) {
         document.getElementById('modtit').innerHTML = "<h5 class='modal-title'>Search results for '" + term + "'</h5>" + document.getElementById('modtit').innerHTML;
@@ -66,16 +66,26 @@ function lunr_search(term) {
 }
 </script>
 <style>
-    .lunrsearchresult .title {color: #d9230f;}
-    .lunrsearchresult .url {color: silver;}
-    .lunrsearchresult a {display: block; color: #777;}
-    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
-    .lunrsearchresult a:hover .title {text-decoration: underline;}
+    .lunrsearchresult .title { color: var(--color-brand-pink); }
+    .lunrsearchresult .url { color: var(--color-brand-gray-green); }
+    .lunrsearchresult a { display: block; color: var(--color-brand-deep-purple); }
+    .lunrsearchresult a:hover,
+    .lunrsearchresult a:focus { background-color: transparent; }
+    .lunrsearchresult a:focus { text-decoration: none; background-color: var(--color-brand-pink); color: var(--color-brand-deep-purple); }
+    .lunrsearchresult a:hover .title { text-decoration: underline; }
 </style>
 
 
 
-
 <form class="bd-search hidden-sm-down" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-<input type="text" class="form-control text-small"  id="lunrsearch" name="q" value="" placeholder="Type keyword and enter..."> 
+<div class="input-group">
+    <input type="text" class="form-control text-small" id="lunrsearch" name="q" value="" placeholder="Type keyword and enter...">
+    <div class="input-group-append">
+        <span class="input-group-text" style="background: none; border-left: 0;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85zm-5.242 1.406a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/>
+            </svg>
+        </span>
+    </div>
+</div>
 </form>
