@@ -1,0 +1,443 @@
+/**
+ * Design Tokens System
+ * ====================
+ * Comprehensive design token system for Blog Lina Lopes
+ *
+ * This file consolidates all design values (colors, typography, spacing, etc.)
+ * into a single source of truth using CSS custom properties.
+ *
+ * Last Updated: January 8, 2025
+ *
+ * Usage:
+ *   - Import this file first in your CSS
+ *   - Use variables instead of hardcoded values
+ *   - All values are documented with their usage context
+ */
+
+:root {
+  /* ============================================
+     COLOR SYSTEM
+     ============================================ */
+
+  /* --- Brand Colors (Primary Identity) --- */
+  --color-brand-deep-purple: #22113E;      /* Main text, headings */
+  --color-brand-pink: #EA7DFF;             /* Primary accent, hover states, active states */
+  --color-brand-turquoise: #08F2DB;        /* Links, secondary accent, interactive elements */
+  --color-brand-gray-green: #CAD8D8;        /* Brand gray-green variant */
+  --color-brand-white: #FFFFFF;            /* Brand white */
+
+  /* --- Semantic Colors (UI States) --- */
+  --color-semantic-primary: var(--color-brand-pink);
+  --color-semantic-secondary: var(--color-brand-turquoise);
+  --color-semantic-success: #03a87c;       /* Success states - green for positive feedback */
+  --color-semantic-info: var(--color-brand-turquoise);  /* Info uses brand turquoise */
+  --color-semantic-warning: #ffde03;       /* Warning states - yellow for warnings */
+  --color-semantic-danger: #ea2f65;        /* Error states - red for errors, delete actions */
+
+  /* --- Functional Color Aliases --- */
+  --color-yellow: #ffde03;                  /* Alias for warning */
+  --color-green: #03a87c;                   /* Alias for success */
+  --color-red: #ea2f65;                     /* Alias for danger */
+  --color-teal: #08F2DB;                    /* Alias for turquoise */
+
+  /* --- Neutral Colors --- */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray: #ced4da;                   /* Standard gray */
+  --color-gray-green: #CAD8D8;             /* Brand gray-green variant */
+  --color-gray-dark: #343a40;
+  --color-gray-light: #f8f9fa;
+  --color-light-blue: #e8f3ec;
+  --color-lightblue: #e8f3ec;              /* Alias for consistency */
+
+  /* --- Text Colors --- */
+  --color-text-primary: var(--color-brand-deep-purple);
+  --color-text-secondary: rgba(0, 0, 0, 0.7);
+  --color-text-muted: rgba(0, 0, 0, 0.5);
+  --color-text-disabled: rgba(0, 0, 0, 0.3);
+  --color-text-inverse: var(--color-white);
+  --color-text-excerpt: rgba(0, 0, 0, 0.5);
+  --color-text-placeholder: #999;
+
+  /* --- Link Colors --- */
+  --color-link: var(--color-brand-turquoise);
+  --color-link-hover: var(--color-brand-pink);
+  --color-link-visited: var(--color-brand-turquoise);
+
+  /* --- Border Colors --- */
+  --color-border: #dee2e6;
+  --color-border-light: #e8f3ec;
+  --color-border-dark: rgba(0, 0, 0, 0.44);
+  --color-border-muted: rgba(0, 0, 0, 0.1);
+  --color-border-navbar: #e9ecef;
+
+  /* --- Background Colors --- */
+  --color-bg-body: var(--color-white);
+  --color-bg-overlay-black: rgba(0, 0, 0, 0.5);
+  --color-bg-overlay-blue: rgba(23, 29, 90, 0.5);
+  --color-bg-overlay-red: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
+  --color-bg-card: var(--color-white);
+  --color-bg-alertbar: var(--color-white);
+
+  /* --- Shadow Colors --- */
+  --color-shadow: rgba(0, 0, 0, 0.3);
+  --color-shadow-light: rgba(0, 0, 0, 0.0785);
+  --color-shadow-dropdown: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
+  --color-shadow-alertbar: 0 -3px 10px 0 rgba(0, 0, 0, 0.0785);
+
+  /* --- Alert Link Colors --- */
+  --color-alert-link: #e6e6e6;
+
+  /* ============================================
+     TYPOGRAPHY SYSTEM
+     ============================================ */
+
+  /* --- Font Families --- */
+  /* Versão com fallbacks modernos (recomendo): */
+  --font-family-sans: "Inter", system-ui, sans-serif;
+  --font-family-serif: "Inter", system-ui, sans-serif;  /* Sem Georgia */
+  --font-family-mono: "Courier Prime", "SF Mono", monospace;
+  --font-family-title: "Space Grotesk", "Inter", sans-serif;
+  --font-family-fallback: Arial, sans-serif;
+
+  /* --- Font Weights --- */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* --- Font Sizes (Type Scale - 1.25 ratio) --- */
+  --font-size-xs: 0.75rem;        /* 12px */
+  --font-size-sm: 0.875rem;       /* 14px */
+  --font-size-base: 1rem;         /* 16px - Base size */
+  --font-size-md: 1.15rem;        /* 18.4px */
+  --font-size-lg: 1.25rem;        /* 20px */
+  --font-size-xl: 1.5rem;         /* 24px */
+  --font-size-2xl: 1.75rem;       /* 28px */
+  --font-size-3xl: 2rem;          /* 32px */
+  --font-size-4xl: 2.4rem;        /* 38.4px */
+  --font-size-5xl: 3.2rem;        /* 51.2px */
+  --font-size-6xl: 3.5rem;        /* 56px */
+  --font-size-7xl: 4.5rem;        /* 72px */
+  --font-size-8xl: 5.5rem;        /* 88px */
+  --font-size-9xl: 6rem;          /* 96px */
+
+  /* --- Special Font Sizes --- */
+  --font-size-article: 20px;      /* Article body text */
+  --font-size-article-lg: 1.24rem; /* Large article text (1920px+) */
+  --font-size-headline: 3.2rem;    /* Article headlines */
+  --font-size-quote: 8rem;         /* Blockquote decoration */
+  --font-size-dropcap: 5em;        /* Drop cap size */
+  --font-size-navbar: 0.93rem;     /* Navbar links */
+  --font-size-navbar-brand: 1.55rem; /* Navbar brand */
+  --font-size-search: 0.85rem;     /* Search input */
+  --font-size-date-day: 16px;      /* Card date day */
+  --font-size-date-month: 11px;    /* Card date month */
+  --font-size-counter: 2rem;       /* List counter */
+  --font-size-social: 13px;        /* Social sharing buttons */
+  --font-size-scroll-top: 20px;    /* Scroll to top button */
+
+  /* --- Line Heights --- */
+  --line-height-tight: 1.1;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.6;
+  --line-height-loose: 1.86;
+  --line-height-base: 1.15;
+
+  /* --- Letter Spacing --- */
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+
+  /* ============================================
+     SPACING SYSTEM (8px base unit)
+     ============================================ */
+
+  /* --- Base Unit --- */
+  --spacing-base: 0.5rem;          /* 8px */
+
+  /* --- Spacing Scale --- */
+  --spacing-0: 0;
+  --spacing-1: 0.15rem;            /* 2.4px */
+  --spacing-2: 0.25rem;            /* 4px */
+  --spacing-3: 0.3rem;             /* 4.8px */
+  --spacing-4: 0.5rem;             /* 8px */
+  --spacing-5: 0.625rem;           /* 10px */
+  --spacing-6: 0.7rem;             /* 11.2px */
+  --spacing-7: 0.75rem;            /* 12px */
+  --spacing-8: 1rem;               /* 16px */
+  --spacing-10: 1.1rem;            /* 17.6px */
+  --spacing-12: 1.2rem;            /* 19.2px */
+  --spacing-15: 1.5rem;            /* 24px */
+  --spacing-16: 2rem;              /* 32px */
+  --spacing-20: 2.5rem;            /* 40px */
+  --spacing-24: 3rem;              /* 48px */
+  --spacing-30: 3.75rem;          /* 60px */
+  --spacing-40: 5rem;              /* 80px */
+  --spacing-50: 6.25rem;          /* 100px */
+
+  /* --- Common Spacing Values --- */
+  --spacing-xs: var(--spacing-2);   /* 4px */
+  --spacing-sm: var(--spacing-4);   /* 8px */
+  --spacing-md: var(--spacing-8);   /* 16px */
+  --spacing-lg: var(--spacing-16);  /* 32px */
+  --spacing-xl: var(--spacing-24);  /* 48px */
+  --spacing-2xl: var(--spacing-40); /* 80px */
+
+  /* --- Component-Specific Spacing --- */
+  --spacing-navbar-padding-top: 69.75px;
+  --spacing-site-content-margin: 30px;
+  --spacing-site-content-margin-neg: -30px;
+  --spacing-footer-margin-top: 50px;
+  --spacing-sticky-offset: 70px;
+  --spacing-sidebar-width: 260px;
+  --spacing-sidebar-padding: 0.5rem 1.5rem;
+  --spacing-sidebar-padding-bottom: 50px;
+  --spacing-jumbotron-padding: 7rem 1rem;
+  --spacing-jumbotron-lg: 10rem 0;
+  --spacing-jumbotron-xl: 15rem 0;
+  --spacing-jumbotron-lg-withnav: calc(10rem - 69.75px);
+  --spacing-card-date-size: 55px;
+  --spacing-card-date-padding: 12.5px 0;
+  --spacing-card-date-offset: 20px;
+  --spacing-icon-small: 40px;
+  --spacing-icon-medium: 60px;
+  --spacing-icon-large: 80px;
+  --spacing-social-button: 40px;
+  --spacing-social-button-small: 20px;
+  --spacing-scroll-top-bottom: 20px;
+  --spacing-scroll-top-right: 20px;
+  --spacing-toc-margin-left: 5rem;
+  --spacing-toc-padding: 10px 30px;
+  --spacing-blockquote-padding: 40px;
+  --spacing-blockquote-quote-margin: -1rem 2rem 0 -3.9rem;
+  --spacing-dropcap-margin: 0 0.2em 0 0;
+  --spacing-excerpt-margin-top: 10px;
+  --spacing-article-margin: 2rem;
+  --spacing-alertbar-padding: 20px 0;
+  --spacing-spanborder-padding-bottom: 20px;
+  --spacing-bottom-align: 30px;
+
+  /* --- Negative Spacing --- */
+  --spacing-neg-5: -5rem;
+
+  /* ============================================
+     BORDER RADIUS SYSTEM
+     ============================================ */
+
+  --radius-none: 0;
+  --radius-sm: 2px;
+  --radius-md: 3px;
+  --radius-base: 0.25rem;          /* 4px */
+  --radius-lg: 0.3rem;             /* 4.8px */
+  --radius-xl: 30px;               /* Rounded buttons/inputs */
+  --radius-full: 50%;              /* Circular */
+  --radius-card-date: 100%;        /* Circular date badge */
+
+  /* ============================================
+     BREAKPOINTS (Responsive Design)
+     ============================================ */
+
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1920px;
+
+  /* --- Container Max Widths --- */
+  --container-sm: 540px;
+  --container-md: 720px;
+  --container-lg: 960px;
+  --container-xl: 1140px;
+  --container-xxl: 1280px;
+
+  /* ============================================
+     Z-INDEX SYSTEM
+     ============================================ */
+
+  --z-index-base: 1;
+  --z-index-sticky: 1020;
+  --z-index-alertbar: 1021;
+  --z-index-footer: 1022;
+  --z-index-sidebar: 1050;
+  --z-index-scroll-top: 2000;
+
+  /* ============================================
+     TRANSITIONS & ANIMATIONS
+     ============================================ */
+
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.2s ease;
+  --transition-slow: 0.3s ease;
+  --transition-navbar: top 0.2s ease-in-out;
+  --transition-link: all 0.2s;
+
+  /* ============================================
+     SHADOWS
+     ============================================ */
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --shadow-dropdown: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
+  --shadow-alertbar: 0 -3px 10px 0 rgba(0, 0, 0, 0.0785);
+  --shadow-card: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+
+  /* ============================================
+     OPACITY
+     ============================================ */
+
+  --opacity-disabled: 0.3;
+  --opacity-muted: 0.5;
+  --opacity-hover: 0.7;
+  --opacity-active: 0.9;
+  --opacity-counter: 0.1;
+
+  /* ============================================
+     SIZING
+     ============================================ */
+
+  /* --- Heights --- */
+  --height-navbar: 69.75px;
+  --height-search-input: 35px;
+  --height-card-date: 55px;
+  --height-icon-small: 40px;
+  --height-icon-medium: 60px;
+  --height-icon-large: 80px;
+  --height-social-button: 40px;
+  --height-social-button-small: 20px;
+  --height-top-image: 200px;
+  --height-top-image-lg: 280px;
+  --height-jumbotron-xl: 100vh;
+  --height-xl-300: 300px;
+  --height-max-380: 380px;
+  --height-site-content-min: 400px;
+
+  /* --- Widths --- */
+  --width-sidebar: 260px;
+  --width-full: 100%;
+  --width-full-vw: 100vw;
+
+  /* ============================================
+     TYPOGRAPHY SCALE (Responsive)
+     ============================================ */
+
+  /* --- Display Sizes (Responsive) --- */
+  --display-3-sm: 2rem;            /* Mobile */
+  --display-3-md: 3.5rem;           /* Tablet */
+  --display-4-sm: 25px;             /* Mobile */
+  --display-4-md: 35px;             /* Tablet */
+
+  /* Note: These use px for exact pixel matching in media queries */
+
+  /* --- Article Typography --- */
+  --article-font-size: 20px;
+  --article-font-size-lg: 1.24rem;  /* 1920px+ */
+  --article-line-height: 1.86;
+  --article-headline-size: 3.2rem;
+  --article-headline-weight: 400;
+  --article-headline-line-height: 1.15;
+
+  /* --- HTML Base Size (1920px+) --- */
+  --html-font-size-lg: 17px;
+
+  /* ============================================
+     COMPONENT-SPECIFIC TOKENS
+     ============================================ */
+
+  /* --- Buttons --- */
+  --button-padding-sm: 0.15rem 0.7rem;
+  --button-padding-base: 0.35rem 1.1rem;
+  --button-padding-lg: 0.65rem 2rem;
+  --button-font-size-sm: var(--font-size-sm);
+  --button-font-size-base: var(--font-size-base);
+  --button-font-size-lg: var(--font-size-md);
+  --button-border-radius: var(--radius-base);
+  --button-border-radius-round: var(--radius-xl);
+  --button-line-height: var(--line-height-relaxed);
+
+  /* --- Inputs --- */
+  --input-border-radius: var(--radius-xl);
+  --input-border: 1px solid var(--color-border-light);
+  --input-padding: var(--spacing-4);
+
+  /* --- Cards --- */
+  --card-border-radius: var(--radius-base);
+  --card-padding: var(--spacing-8);
+  --card-shadow: var(--shadow-card);
+
+  /* --- Navbar --- */
+  --navbar-font-weight: var(--font-weight-normal);
+  --navbar-font-size: var(--font-size-navbar);
+  --navbar-brand-font-size: var(--font-size-navbar-brand);
+  --navbar-transition: var(--transition-navbar);
+
+  /* --- Alerts --- */
+  --alert-padding: var(--spacing-8);
+  --alert-border-radius: var(--radius-base);
+
+  /* --- Tables of Contents --- */
+  --toc-border: 1px solid #e8e8e8;
+  --toc-border-radius: var(--radius-md);
+
+  /* ============================================
+     LEGACY ALIASES (For Backward Compatibility)
+     ============================================ */
+
+  /* These maintain compatibility with existing code */
+  --primary: var(--color-semantic-primary);
+  --secondary: var(--color-semantic-secondary);
+  --success: var(--color-semantic-success);
+  --info: var(--color-semantic-info);
+  --warning: var(--color-semantic-warning);
+  --danger: var(--color-semantic-danger);
+  --light: var(--color-gray-light);
+  --dark: var(--color-gray-dark);
+  --white: var(--color-white);
+  --deep-purple: var(--color-brand-deep-purple);
+  --pink: var(--color-brand-pink);
+  --turquoise: var(--color-brand-turquoise);
+  --gray: var(--color-gray);
+  --gray-green: var(--color-gray-green);
+  --gray-dark: var(--color-gray-dark);
+  --light-blue: var(--color-light-blue);
+  --lightblue: var(--color-lightblue);
+}
+
+/* ============================================
+   RESPONSIVE TYPOGRAPHY SCALE
+   ============================================ */
+
+@media (min-width: 1920px) {
+  :root {
+    --html-font-size: var(--html-font-size-lg);
+    --article-font-size: var(--article-font-size-lg);
+    --container-lg: var(--container-xxl);
+  }
+}
+
+/* ============================================
+   DARK MODE SUPPORT (Future)
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+  /* Dark mode tokens can be added here when needed */
+  /* Example:
+  :root {
+    --color-text-primary: #ffffff;
+    --color-bg-body: #1a1a1a;
+  }
+  */
+}
+
+/* ============================================
+   PRINT STYLES (Future)
+   ============================================ */
+
+@media print {
+  /* Print-specific tokens can be added here */
+}

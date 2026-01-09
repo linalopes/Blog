@@ -9,47 +9,8 @@
  @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300..700&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
-:root {
-  --deep-purple: #22113E;
-  --gray-green: #CAD8D8;
-  --pink: #EA7DFF;
-  --turquoise: #08F2DB;
-  --blue: #7832e2;
-  --indigo: #502c6c;
-  --purple: #22113E;
-  --red: #ea2f65;
-  --orange: #fbb500;
-  --yellow: #ffde03;
-  --green: #03a87c;
-  --teal: #08F2DB;
-  --cyan: #35bdff;
-  --white: #fff;
-  --gray: #CAD8D8;
-  --gray-dark: #343a40;
-  --light-blue: #e8f3ec;
-  --primary: #EA7DFF;
-  --secondary: #08F2DB;
-  --success: #03a87c;
-  --info: #09ebaf;
-  --warning: #ffde03;
-  --danger: #ea2f65;
-  --light: #f8f9fa;
-  --dark: #212529;
-  --white: #fff;
-  --purple: #ad6edd;
-  --salmon: #ff977a;
-  --cyan: #35bdff;
-  --gray: #ced4da;
-  --indigo: #502c6c;
-  --orange: #fbb500;
-  --lightblue: #e8f3ec;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Inter", "Helvetica Neue", "Arial";
-  --font-family-monospace: "Courier Prime", monospace; }
+/* Design tokens are now imported from design-tokens.css */
+/* Legacy variable aliases are maintained in design-tokens.css for backward compatibility */
 
 *,
 *::before,
@@ -451,7 +412,7 @@ kbd {
     font-size: 100%;
     font-weight: 700; }
 
-pre {    
+pre {
     background: #eee;
     padding: 5px;
     font-size:14px;
@@ -3770,7 +3731,7 @@ input[type="button"].btn-block {
   display: flex;
   padding-left: 0;
   list-style: none;
-  border-radius: 0.25rem; 
+  border-radius: 0.25rem;
   font-size: 14px;
   font-weight: 600;
 }
@@ -4730,7 +4691,7 @@ button.close {
   .bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before {
     bottom: 0;
     border-top-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-top .arrow::after,
   .bs-popover-auto[x-placement^="top"] .arrow::after {
     bottom: 1px;
@@ -4750,7 +4711,7 @@ button.close {
   .bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before {
     left: 0;
     border-right-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-right .arrow::after,
   .bs-popover-auto[x-placement^="right"] .arrow::after {
     left: 1px;
@@ -4767,7 +4728,7 @@ button.close {
   .bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before {
     top: 0;
     border-bottom-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-bottom .arrow::after,
   .bs-popover-auto[x-placement^="bottom"] .arrow::after {
     top: 1px;
@@ -4796,7 +4757,7 @@ button.close {
   .bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before {
     right: 0;
     border-left-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-left .arrow::after,
   .bs-popover-auto[x-placement^="left"] .arrow::after {
     right: 1px;
@@ -8476,7 +8437,7 @@ html {
   font-weight: 300;
 }
 .font-highlight {
-  font-family: 'Courier Prime', monospace;  
+  font-family: 'Courier Prime', monospace;
   font-weight: 400;
 }
 .font-text {
@@ -8540,7 +8501,7 @@ html {
   border-style: solid;
   border-width: 1px;
   border-color: var(--pink);
-  color: var(--pink); 
+  color: var(--pink);
   text-align: center;
   padding: 10px;
   border-radius: 50px;

@@ -1,25 +1,450 @@
----
-permalink: /404.html
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - System Error | Blog Lina Lopes</title>
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+    <!-- WinBox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/winbox@0.2.82/dist/css/winbox.min.css">
 
-<div class="container">
-  <h1>404</h1>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier Prime', monospace;
+            background: linear-gradient(135deg, #22113E 0%, #502c6c 100%);
+            color: #08F2DB;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Scanlines effect */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.15),
+                rgba(0, 0, 0, 0.15) 1px,
+                transparent 1px,
+                transparent 2px
+            );
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        .desktop {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        .error-screen {
+            text-align: center;
+            padding: 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            font-family: 'Space Grotesk', sans-serif;
+            color: #EA7DFF;
+            text-shadow:
+                0 0 10px rgba(234, 125, 255, 0.8),
+                0 0 20px rgba(234, 125, 255, 0.6),
+                0 0 30px rgba(234, 125, 255, 0.4);
+            animation: glitch 2s infinite;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        @keyframes glitch {
+            0%, 100% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+        }
+
+        .error-message {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #08F2DB;
+            text-shadow: 0 0 5px rgba(8, 242, 219, 0.5);
+        }
+
+        .prompt {
+            color: #CAD8D8;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .prompt::before {
+            content: '> ';
+            color: #EA7DFF;
+        }
+
+        .desktop-icons {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            z-index: 2;
+        }
+
+        .icon {
+            width: 80px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .icon:hover {
+            transform: scale(1.1);
+        }
+
+        .icon-img {
+            width: 60px;
+            height: 60px;
+            background: #EA7DFF;
+            border-radius: 8px;
+            margin: 0 auto 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 12px rgba(234, 125, 255, 0.4);
+        }
+
+        .icon-label {
+            font-size: 0.75rem;
+            color: #08F2DB;
+            text-shadow: 0 0 3px rgba(8, 242, 219, 0.8);
+        }
+
+        .taskbar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+            background: rgba(34, 17, 62, 0.95);
+            border-top: 2px solid #08F2DB;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            z-index: 999;
+        }
+
+        .taskbar-time {
+            margin-left: auto;
+            color: #08F2DB;
+            font-size: 0.875rem;
+        }
+
+        /* WinBox custom styles */
+        .wb-body {
+            background: rgba(34, 17, 62, 0.98);
+            color: #08F2DB;
+            font-family: 'Courier Prime', monospace;
+            padding: 1rem;
+        }
+
+        .wb-title {
+            background: linear-gradient(90deg, #EA7DFF 0%, #08F2DB 100%);
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .window-content {
+            line-height: 1.6;
+        }
+
+        .window-content a {
+            color: #EA7DFF;
+            text-decoration: none;
+            border-bottom: 1px solid #EA7DFF;
+        }
+
+        .window-content a:hover {
+            color: #08F2DB;
+            border-color: #08F2DB;
+        }
+
+        .btn {
+            background: #EA7DFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 1rem;
+            transition: all 0.2s;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #08F2DB;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(8, 242, 219, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 4rem;
+            }
+
+            .desktop-icons {
+                top: auto;
+                bottom: 60px;
+                right: 10px;
+                flex-direction: row;
+            }
+
+            .icon {
+                width: 60px;
+            }
+
+            .icon-img {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="desktop">
+        <div class="error-screen">
+            <div class="error-code">404</div>
+            <div class="error-message">SYSTEM ERROR: Page Not Found</div>
+            <div class="prompt">The requested neural pathway does not exist in this dimension.</div>
+            <div class="prompt">Try opening one of the desktop applications to navigate back.</div>
+        </div>
+
+        <div class="desktop-icons">
+            <div class="icon" onclick="openAbout()">
+                <div class="icon-img">🤖</div>
+                <div class="icon-label">About.exe</div>
+            </div>
+
+            <div class="icon" onclick="openProjects()">
+                <div class="icon-img">🎨</div>
+                <div class="icon-label">Projects</div>
+            </div>
+
+            <div class="icon" onclick="openBlog()">
+                <div class="icon-img">📝</div>
+                <div class="icon-label">Blog.app</div>
+            </div>
+
+            <div class="icon" onclick="openSearch()">
+                <div class="icon-img">🔍</div>
+                <div class="icon-label">Search</div>
+            </div>
+        </div>
+
+        <div class="taskbar">
+            <div>LILO_OS v4.04</div>
+            <div class="taskbar-time" id="time"></div>
+        </div>
+    </div>
+
+    <!-- WinBox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/winbox@0.2.82/dist/js/winbox.min.js"></script>
+
+    <script>
+        // Update clock
+        function updateTime() {
+            const now = new Date();
+            const timeStr = now.toLocaleTimeString('en-US', {
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+            document.getElementById('time').textContent = timeStr;
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+
+        // Window functions
+        function openAbout() {
+            new WinBox({
+                title: 'About Lina Lopes',
+                width: '500px',
+                height: '400px',
+                x: 'center',
+                y: 'center',
+                html: `
+                    <div class="window-content">
+                        <h2 style="color: #EA7DFF; font-family: 'Space Grotesk', sans-serif; margin-bottom: 1rem;">
+                            Creative Technologist
+                        </h2>
+                        <p style="margin-bottom: 1rem;">
+                            I explore the intersection of art, technology, and machine learning.
+                        </p>
+                        <p style="margin-bottom: 1rem;">
+                            Specialties: Data Visualization, Generative Art, AI/ML, Interactive Installations
+                        </p>
+                        <p>
+                            Tools: D3.js, p5.js, Three.js, Python, PyTorch
+                        </p>
+                        <a href="/" class="btn">Go to Homepage</a>
+                    </div>
+                `
+            });
+        }
+
+        function openProjects() {
+            new WinBox({
+                title: 'Recent Projects',
+                width: '600px',
+                height: '450px',
+                x: 'center',
+                y: 'center',
+                html: `
+                    <div class="window-content">
+                        <h2 style="color: #EA7DFF; font-family: 'Space Grotesk', sans-serif; margin-bottom: 1rem;">
+                            Featured Work
+                        </h2>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: #EA7DFF;">▸</span>
+                                <a href="/">Taming Wild Robots - ML & Robotics</a>
+                            </li>
+                            <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: #EA7DFF;">▸</span>
+                                <a href="/">Robotic Caterpillar - AI Imagination</a>
+                            </li>
+                            <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: #EA7DFF;">▸</span>
+                                <a href="/">Creative Coding with scikit-image</a>
+                            </li>
+                            <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: #EA7DFF;">▸</span>
+                                <a href="/">Gen AI & Animation Language</a>
+                            </li>
+                        </ul>
+                        <a href="/" class="btn">View All Projects</a>
+                    </div>
+                `
+            });
+        }
+
+        function openBlog() {
+            new WinBox({
+                title: 'Blog Navigation',
+                width: '500px',
+                height: '350px',
+                x: 'center',
+                y: 'center',
+                html: `
+                    <div class="window-content">
+                        <h2 style="color: #EA7DFF; font-family: 'Space Grotesk', sans-serif; margin-bottom: 1rem;">
+                            Explore by Topic
+                        </h2>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+                            <a href="/categories.html#ai-project" style="background: rgba(234, 125, 255, 0.2); padding: 8px 16px; border-radius: 20px; border: 2px solid #EA7DFF;">
+                                AI & ML
+                            </a>
+                            <a href="/categories.html#datavis" style="background: rgba(8, 242, 219, 0.2); padding: 8px 16px; border-radius: 20px; border: 2px solid #08F2DB;">
+                                Data Viz
+                            </a>
+                            <a href="/categories.html#creative-process" style="background: rgba(234, 125, 255, 0.2); padding: 8px 16px; border-radius: 20px; border: 2px solid #EA7DFF;">
+                                Creative Coding
+                            </a>
+                            <a href="/categories.html#documentation" style="background: rgba(8, 242, 219, 0.2); padding: 8px 16px; border-radius: 20px; border: 2px solid #08F2DB;">
+                                Documentation
+                            </a>
+                        </div>
+                        <a href="/" class="btn">Go to Blog Home</a>
+                    </div>
+                `
+            });
+        }
+
+        function openSearch() {
+            new WinBox({
+                title: 'Search Blog',
+                width: '500px',
+                height: '300px',
+                x: 'center',
+                y: 'center',
+                html: `
+                    <div class="window-content">
+                        <h2 style="color: #EA7DFF; font-family: 'Space Grotesk', sans-serif; margin-bottom: 1rem;">
+                            Find Content
+                        </h2>
+                        <p style="margin-bottom: 1rem;">
+                            Use the search bar in the header to find posts by keyword.
+                        </p>
+                        <p style="margin-bottom: 1rem;">
+                            Or browse by:
+                        </p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.5rem;">
+                                <a href="/authors-list.html">→ Authors</a>
+                            </li>
+                            <li style="margin-bottom: 0.5rem;">
+                                <a href="/categories.html">→ All Categories</a>
+                            </li>
+                        </ul>
+                        <a href="/" class="btn">Return Home</a>
+                    </div>
+                `
+            });
+        }
+
+        // Auto-open welcome window on load
+        setTimeout(() => {
+            new WinBox({
+                title: 'Welcome to LILO_OS',
+                width: '400px',
+                height: '250px',
+                x: 'center',
+                y: 'center',
+                html: `
+                    <div class="window-content" style="text-align: center;">
+                        <h2 style="color: #EA7DFF; font-family: 'Space Grotesk', sans-serif; margin-bottom: 1rem;">
+                            Oops! 404
+                        </h2>
+                        <p style="margin-bottom: 1rem;">
+                            This page got lost in the neural network.
+                        </p>
+                        <p style="margin-bottom: 1rem;">
+                            Click the desktop icons to navigate! 🤖
+                        </p>
+                        <a href="/" class="btn">Take Me Home</a>
+                    </div>
+                `,
+                onclose: function() {
+                    // Window closed
+                }
+            });
+        }, 500);
+    </script>
+</body>
+</html>

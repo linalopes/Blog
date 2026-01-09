@@ -1,0 +1,116 @@
+// ============================================
+// Design Tokens - Single Source of Truth
+// ============================================
+// Consolidated CSS variables for the blog
+// Last updated: January 8, 2025
+
+:root {
+  // ============================================
+  // Brand Colors
+  // ============================================
+  --deep-purple: #22113E;
+  --pink: #EA7DFF;
+  --turquoise: #08F2DB;
+  --blue: #7832e2;
+
+  // ============================================
+  // Semantic Colors
+  // ============================================
+  --primary: #EA7DFF;
+  --secondary: #08F2DB;
+  --success: #03a87c;
+  --info: #09ebaf;
+  --warning: #ffde03;
+  --danger: #ea2f65;
+  --light: #f8f9fa;
+  --dark: #212529;
+
+  // ============================================
+  // Extended Palette
+  // ============================================
+  --purple: #ad6edd;        // Note: --deep-purple (#22113E) is separate
+  --indigo: #502c6c;
+  --orange: #fbb500;
+  --yellow: #ffde03;
+  --green: #03a87c;
+  --red: #ea2f65;
+  --teal: #08F2DB;          // Same as --turquoise
+  --cyan: #35bdff;          // Kept for compatibility (used in some components)
+
+  // ============================================
+  // Neutral Colors
+  // ============================================
+  --white: #fff;
+  --gray: #ced4da;          // Standard gray
+  --gray-green: #CAD8D8;   // Custom gray-green variant
+  --gray-dark: #343a40;
+  --light-blue: #e8f3ec;
+  --lightblue: #e8f3ec;    // Alias for consistency
+
+  // ============================================
+  // Typography
+  // ============================================
+  --font-family-sans-serif: "Inter", "Helvetica Neue", "Arial";
+  --font-family-monospace: "Courier Prime", monospace;
+
+  // ============================================
+  // Breakpoints
+  // ============================================
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  // ============================================
+  // Spacing Scale (for future use)
+  // ============================================
+  --spacing-unit: 1rem;
+  --spacing-xs: calc(var(--spacing-unit) * 0.25);   // 0.25rem
+  --spacing-sm: calc(var(--spacing-unit) * 0.5);    // 0.5rem
+  --spacing-md: var(--spacing-unit);                // 1rem
+  --spacing-lg: calc(var(--spacing-unit) * 1.5);    // 1.5rem
+  --spacing-xl: calc(var(--spacing-unit) * 2);      // 2rem
+  --spacing-xxl: calc(var(--spacing-unit) * 3);     // 3rem
+
+  // ============================================
+  // Border Radius
+  // ============================================
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.3rem;
+  --border-radius-lg: 30px;
+  --border-radius-full: 50%;
+
+  // ============================================
+  // Transitions
+  // ============================================
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.2s ease;
+  --transition-slow: 0.3s ease;
+}
+
+// ============================================
+// Color Usage Guide
+// ============================================
+// --primary: Main brand color (pink)
+// --secondary: Secondary brand color (turquoise)
+// --success: Success states, links
+// --info: Informational elements
+// --warning: Warning states
+// --danger: Error states, delete actions
+// --deep-purple: Main text color
+// --turquoise: Links, accents
+// --pink: Hover states, highlights
+// --gray: Neutral backgrounds, borders
+// --gray-green: Custom accent gray
+
+// ============================================
+// Removed Variables (Consolidated)
+// ============================================
+// --salmon: REMOVED (unused)
+// Duplicate --white: Consolidated to single definition
+// Duplicate --purple: Resolved (--deep-purple vs --purple)
+// Duplicate --gray: Resolved (--gray vs --gray-green)
+// Duplicate --cyan: Consolidated to single definition
+// Duplicate --indigo: Consolidated to single definition
+// Duplicate --orange: Consolidated to single definition
