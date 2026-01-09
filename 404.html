@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - System Error | {{site.name}}</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/{{site.favicon}}">
 
     <!-- WinBox CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/winbox@0.2.82/dist/css/winbox.min.css">
@@ -130,7 +131,7 @@
             width: 60px;
             height: 60px;
             background: #EA7DFF;
-            border-radius: 8px;
+            border-radius: 4px;
             margin: 0 auto 8px;
             display: flex;
             align-items: center;
@@ -185,10 +186,10 @@
         .window-content a {
             text-decoration: none;
             border-bottom: 1px solid #EA7DFF;
+            color: #ffffff;
         }
 
         .window-content a:hover {
-            color: #08F2DB;
             border-color: #08F2DB;
         }
 
@@ -208,8 +209,59 @@
 
         .btn:hover {
             background: #08F2DB;
+            color: white;
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(8, 242, 219, 0.4);
+        }
+
+        /* WinBox responsive styles */
+        @media (max-width: 768px) {
+            /* Make WinBox windows mobile-friendly */
+            .mobile-friendly {
+                max-width: 90vw !important;
+                width: 90% !important;
+                max-height: 85vh !important;
+            }
+
+            .mobile-friendly .wb-body {
+                overflow-y: auto;
+                overflow-x: hidden;
+                max-height: calc(85vh - 40px);
+                padding: 1rem;
+            }
+
+            .window-content {
+                padding: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .window-content h2 {
+                font-size: 1.25rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .window-content p {
+                font-size: 0.9rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .btn {
+                width: 100%;
+                padding: 12px 20px;
+                font-size: 0.9rem;
+                margin-top: 1rem;
+            }
+
+            /* Make lists more compact on mobile */
+            .window-content ul {
+                font-size: 0.85rem;
+            }
+
+            /* Better touch targets */
+            .window-content a {
+                padding: 8px 0;
+                display: block;
+            }
         }
 
         @media (max-width: 768px) {
@@ -247,22 +299,30 @@
 
         <div class="desktop-icons">
             <div class="icon" onclick="openAbout()">
-                <div class="icon-img">🤖</div>
+                <div class="icon-img">
+                    <img src="assets/images/robot.svg" alt="Robot Icon" style="width: 100%; height: 100%;">
+                </div>
                 <div class="icon-label">About.exe</div>
             </div>
 
             <div class="icon" onclick="openProjects()">
-                <div class="icon-img">🎨</div>
+                <div class="icon-img">
+                    <img src="assets/images/palette.svg" alt="Projects Palette Icon" style="width: 100%; height: 100%;">
+                </div>
                 <div class="icon-label">Projects</div>
             </div>
 
             <div class="icon" onclick="openBlog()">
-                <div class="icon-img">📝</div>
+                <div class="icon-img">
+                    <img src="assets/images/note.svg" alt="Blog Notes Icon" style="width: 100%; height: 100%;">
+                </div>
                 <div class="icon-label">Blog.app</div>
             </div>
 
             <div class="icon" onclick="openSearch()">
-                <div class="icon-img">🔍</div>
+                <div class="icon-img">
+                    <img src="assets/images/magnifying-glass.svg" alt="Search Icon" style="width: 100%; height: 100%;">
+                </div>
                 <div class="icon-label">Search</div>
             </div>
         </div>
@@ -289,14 +349,65 @@
         updateTime();
         setInterval(updateTime, 1000);
 
+        // Handle window resize - adjust WinBox windows on mobile
+        window.addEventListener('resize', function() {
+            const isMobile = window.innerWidth <= 768;
+            // Close all windows on mobile resize to prevent positioning issues
+            // Users can reopen them with correct sizing
+            if (isMobile) {
+                const windows = document.querySelectorAll('.wb-box');
+                windows.forEach(win => {
+                    if (win.classList.contains('mobile-friendly')) {
+                        const winbox = win.winbox;
+                        if (winbox) {
+                            winbox.resize('90%', '80vh');
+                            winbox.move('center', 'center');
+                        }
+                    }
+                });
+            }
+        });
+
+        // Responsive WinBox helper function
+        function getResponsiveSize(baseWidth, baseHeight) {
+            const isMobile = window.innerWidth <= 768;
+            if (isMobile) {
+                // On mobile: use percentage width and viewport height
+                return {
+                    width: '90%',
+                    height: '80vh'
+                };
+            }
+            return {
+                width: baseWidth,
+                height: baseHeight
+            };
+        }
+
+        function getResponsivePosition(x, y) {
+            const isMobile = window.innerWidth <= 768;
+            if (isMobile) {
+                // On mobile: always center for better UX
+                return {
+                    x: 'center',
+                    y: 'center'
+                };
+            }
+            return { x, y };
+        }
+
         // Window functions
         function openAbout() {
+            const size = getResponsiveSize('500px', '400px');
+            const pos = getResponsivePosition('left', 'center');
             new WinBox({
+                background: '#08F2DB',
                 title: 'About Lina Lopes',
-                width: '500px',
-                height: '400px',
-                x: 'center',
-                y: 'center',
+                width: size.width,
+                height: size.height,
+                x: pos.x,
+                y: pos.y,
+                class: 'mobile-friendly',
                 html: `
                     <div class="window-content">
                         <h2 style="color: #EA7DFF; font-family: 'Space Grotesk', sans-serif; margin-bottom: 1rem;">
@@ -318,12 +429,16 @@
         }
 
         function openProjects() {
+            const size = getResponsiveSize('600px', '450px');
+            const pos = getResponsivePosition('center', 'bottom');
             new WinBox({
+                background: '#08F2DB',
                 title: 'Recent Projects',
-                width: '600px',
-                height: '450px',
-                x: 'center',
-                y: 'center',
+                width: size.width,
+                height: size.height,
+                x: pos.x,
+                y: pos.y,
+                class: 'mobile-friendly',
                 html: `
                     <div class="window-content">
                         <h2 style="color: #EA7DFF; font-family: 'Space Grotesk', sans-serif; margin-bottom: 1rem;">
@@ -331,7 +446,7 @@
                         </h2>
                         <ul style="list-style: none; padding: 0;">
                             <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
-                                <span style="position: absolute; left: 0; color: #EA7DFF;">▸</span>
+                                <span style="position: absolute; left: 0;">▸</span>
                                 <a href="/">Taming Wild Robots - ML & Robotics</a>
                             </li>
                             <li style="margin-bottom: 1rem; padding-left: 1.5rem; position: relative;">
@@ -354,28 +469,32 @@
         }
 
         function openBlog() {
+            const size = getResponsiveSize('500px', '350px');
+            const pos = getResponsivePosition('center', 'center');
             new WinBox({
+                background: '#08F2DB',
                 title: 'Blog Navigation',
-                width: '500px',
-                height: '350px',
-                x: 'center',
-                y: 'center',
+                width: size.width,
+                height: size.height,
+                x: pos.x,
+                y: pos.y,
+                class: 'mobile-friendly',
                 html: `
                     <div class="window-content">
                         <h2 style="color: #EA7DFF; font-family: 'Space Grotesk', sans-serif; margin-bottom: 1rem;">
                             Explore by Topic
                         </h2>
                         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
-                            <a href="/categories.html#ai-project" style="background: rgba(234, 125, 255, 0.2); padding: 8px 16px; border-radius: 20px; border: 2px solid #EA7DFF;">
+                            <a href="/categories.html#ai-project" style="background: rgba(234, 125, 255, 0.2); padding: 8px 16px; border-radius: 4px; border: 2px solid #EA7DFF;">
                                 AI & ML
                             </a>
-                            <a href="/categories.html#datavis" style="background: rgba(8, 242, 219, 0.2); padding: 8px 16px; border-radius: 20px; border: 2px solid #08F2DB;">
+                            <a href="/categories.html#datavis" style="background: rgba(8, 242, 219, 0.2); padding: 8px 16px; border-radius: 4px; border: 2px solid #08F2DB;">
                                 Data Viz
                             </a>
-                            <a href="/categories.html#creative-process" style="background: rgba(234, 125, 255, 0.2); padding: 8px 16px; border-radius: 20px; border: 2px solid #EA7DFF;">
+                            <a href="/categories.html#creative-process" style="background: rgba(234, 125, 255, 0.2); padding: 8px 16px; border-radius: 4px; border: 2px solid #EA7DFF;">
                                 Creative Coding
                             </a>
-                            <a href="/categories.html#documentation" style="background: rgba(8, 242, 219, 0.2); padding: 8px 16px; border-radius: 20px; border: 2px solid #08F2DB;">
+                            <a href="/categories.html#documentation" style="background: rgba(8, 242, 219, 0.2); padding: 8px 16px; border-radius: 4px; border: 2px solid #08F2DB;">
                                 Documentation
                             </a>
                         </div>
@@ -386,12 +505,16 @@
         }
 
         function openSearch() {
+            const size = getResponsiveSize('500px', '300px');
+            const pos = getResponsivePosition('right', 'bottom');
             new WinBox({
+                background: '#08F2DB',
                 title: 'Search Blog',
-                width: '500px',
-                height: '300px',
-                x: 'center',
-                y: 'center',
+                width: size.width,
+                height: size.height,
+                x: pos.x,
+                y: pos.y,
+                class: 'mobile-friendly',
                 html: `
                     <div class="window-content">
                         <h2 style="color: #EA7DFF; font-family: 'Space Grotesk', sans-serif; margin-bottom: 1rem;">
@@ -419,12 +542,15 @@
 
         // Auto-open welcome window on load
         setTimeout(() => {
+            const size = getResponsiveSize('400px', '350px');
             new WinBox({
+                background: '#08F2DB',
                 title: 'Welcome to LILO_OS',
-                width: '400px',
-                height: '250px',
+                width: size.width,
+                height: size.height,
                 x: 'center',
                 y: 'center',
+                class: 'mobile-friendly',
                 html: `
                     <div class="window-content" style="text-align: center;">
                         <h2 style="color: #EA7DFF; font-family: 'Space Grotesk', sans-serif; margin-bottom: 1rem;">
@@ -434,7 +560,7 @@
                             This page got lost in the neural network.
                         </p>
                         <p style="margin-bottom: 1rem;">
-                            Click the desktop icons to navigate! 🤖
+                            Click the desktop icons to navigate!
                         </p>
                         <a href="/" class="btn">Take Me Home</a>
                     </div>
