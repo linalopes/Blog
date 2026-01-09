@@ -133,14 +133,16 @@ a,a:hover {
 
 /* Links - Turquoise with Pink hover */
 a {
-	color: var(--color-brand-turquoise);
+	color: var(--color-brand-pink);
 	transition: color 0.2s ease;
 }
 a:hover {
-	color: var(--color-brand-pink);
+	color: var(--color-brand-deep-purple);
+  background-color: var(--color-brand-pink);
+  font-weight: 500;
 }
 a.text-dark:hover {
-	color:var(--color-link-hover) !important;
+	color:var(--color-brand-deep-purple) !important;
 }
 .c-pointer:hover {
 	cursor:pointer;
@@ -927,7 +929,8 @@ footer {
 }
 
 .footer-links a:hover {
-	color: var(--color-brand-turquoise);
+	color: var(--color-brand-deep-purple);
+  background-color: var(--color-brand-pink);
 }
 
 /* Icon links */

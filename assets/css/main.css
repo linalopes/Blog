@@ -115,7 +115,7 @@ sup {
   top: -.5em; }
 
 a {
-  color: var(--turquoise);
+  color: var(--color-brand-pink);
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
