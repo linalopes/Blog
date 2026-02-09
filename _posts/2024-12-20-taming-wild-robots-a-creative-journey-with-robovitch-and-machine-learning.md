@@ -17,6 +17,12 @@ author: lina
 ---
 If I were a circus performer, my daughter once told me, I’d be the **tamer of wild robots**. This whimsical observation inspired me to take a small but ferocious robot I created back in 2020—**Robovitch**—and teach it a few tricks. Or, as I like to say, to domesticate it. This project is not just about building a functional robot; it’s about bringing creativity, storytelling, and technology together. And it’s a process I believe designers, educators, and technologists will love.
 
+> **TL;DR**
+> - **What you’ll build:** a small robot that reacts to 3 hand gestures (Neutral / Fist / Two fingers) using a Teachable Machine model running in the browser.
+> - **Stack:** Teachable Machine → ml5.js (TensorFlow.js) + p5.js → p5.serialcontrol → Arduino → 3 servos.
+> - **Outcome:** a “domesticated” Robovitch that nods “no”, leans forward curiously, or stays neutral — great for educators and creative technologists.
+
+
 ## **The Idea: A Robot That Listens to Your Hands**
 
 Robovitch, my small robotic companion, now understands three distinct hand gestures thanks to **Machine Learning**. Here’s what it does:
@@ -37,7 +43,7 @@ To bring this vision to life, I used a combination of software and hardware. Her
 
 ### **1. Gesture Recognition with Teachable Machine**
 
-Teachable Machine is a powerful and intuitive tool by Google, designed to make machine learning accessible. It allows you to train a model by uploading data or directly recording samples through your webcam. Once trained, the model can recognize gestures, images, sounds, and more.  
+Teachable Machine is a powerful and intuitive tool by Google, designed to make machine learning accessible. It allows you to train a model by uploading data or directly recording samples through your webcam. Once trained, the model can recognize gestures, images, sounds, and more.
 I used it to train a model that detects three hand gestures: a fist, two fingers, and no gesture. This model runs seamlessly on the web, making it easy to integrate with creative coding platforms like **p5.js**.
 
 ### **2. Real-Time Interaction with p5.js and ml5.js**
@@ -59,7 +65,7 @@ To connect the web-based interface with the Arduino, I used **p5.serialcontrol**
 
 ## **The Story: Creativity Meets Technology**
 
-I wanted Robovitch to feel more like a performer than a robot. When I close my fist, it’s like Robovitch is stubbornly saying “No.” When I raise two fingers, it looks inquisitive. And when I do nothing, it quietly returns to its default state.  
+I wanted Robovitch to feel more like a performer than a robot. When I close my fist, it’s like Robovitch is stubbornly saying “No.” When I raise two fingers, it looks inquisitive. And when I do nothing, it quietly returns to its default state.
 These little gestures make Robovitch feel alive, showing how **machine learning** can take something as abstract as code and translate it into expressive physical actions.
 
 This project is more than a playful experiment; it’s a gateway into the fascinating intersection of **machine learning and robotics**. Machine learning is often seen as something confined to the digital realm—web interfaces, apps, and algorithms. But projects like this show how it can be brought into the physical world, allowing machines to respond dynamically to human input.
@@ -101,6 +107,9 @@ Let's break down the technical details, step by step:
 
 **Load Your Model with ml5.js**:
 
+<details class="code-accordion" markdown="1" open>
+<summary><strong>Code: p5.js + ml5.js classifier</strong> <span class="hint">(click to toggle)</span></summary>
+
 ```javascript
 let classifier, video, label;
 
@@ -141,12 +150,19 @@ function draw() {
   text(`Label: ${label}`, 10, height - 10);
 }
 ```
+
+</details>
+
+
 ### **Step 3: Connect Arduino and Servos**
 
 1. **Arduino Setup**:
-    
+
     - Connect three servo motors to pins 9, 10, and 11.
     - Upload the following code to the Arduino:
+
+<details class="code-accordion" markdown="1" open>
+<summary><strong>Code: Arduino servo control (N / F / T)</strong> <span class="hint">(click to toggle)</span></summary>
 
 ```cpp
 #include <Servo.h>
@@ -185,6 +201,8 @@ void curiousPose() {
 }
 ```
 
+</details>
+
 2. **Set Up p5.serialcontrol**:
 
 - Download and launch [p5.serialcontrol](https://github.com/p5-serial/p5.serialcontrol).
@@ -194,6 +212,9 @@ void curiousPose() {
 
 1. **Modify p5.js Code**:
     - Add serial communication to send commands based on the detected gesture:
+
+<details class="code-accordion" markdown="1" open>
+<summary><strong>Code: send label to Arduino via Serial</strong> <span class="hint">(click to toggle)</span></summary>
 
 ```javascript
 let serial;
@@ -220,6 +241,8 @@ function gotResult(error, results) {
 }
 
 ```
+
+</details>
 
 ### **Step 5: Test and Debug**
 

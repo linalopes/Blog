@@ -1016,10 +1016,10 @@ div.main-title h1 {
 article p,
 article li {
 	font-family: var(--font-family-serif);
-	font-size: 1.25rem;
-	line-height: 1.8;
+	font-size: 1rem;
+	/* line-height: 1.8;
+  margin-bottom: 1.5rem; */
 	color: rgba(34, 17, 62, 0.9);
-	margin-bottom: 1.5rem;
 }
 article pre,article figure,article img,article iframed,article embed {
 	margin-bottom:2rem;
