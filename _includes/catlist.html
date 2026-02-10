@@ -1,0 +1,12 @@
+{%- comment -%}
+  Renders category badge list for a post/page.
+  Usage:  {% include catlist.html categories=post.categories %}
+  Params: categories  – array of category names (required)
+          link_class  – CSS classes for the <a> tag (default: "text-muted smoothscroll")
+          downcase    – if "true", display text is downcased (default: false)
+{%- endcomment -%}
+<span class="catlist">
+{%- for category in include.categories -%}
+<a class="{{ include.link_class | default: 'text-muted smoothscroll' }}" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{% if include.downcase == "true" %}{{ category | downcase }}{% else %}{{ category }}{% endif %}</a><span class="sep">, </span>
+{%- endfor -%}
+</span>

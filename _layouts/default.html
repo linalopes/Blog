@@ -73,6 +73,9 @@
 
 <body class="{% if page.url == " /" %} homefirstpage {% endif %}">
 
+    <!-- Skip to main content (accessibility) -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <!-- Navbar -->
     <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container">
@@ -98,7 +101,7 @@
     </div>
 
     <!-- Content -->
-    <main role="main" class="site-content">
+    <main role="main" id="main-content" class="site-content">
         {{ content }}
     </main>
 

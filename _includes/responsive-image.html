@@ -1,0 +1,7 @@
+{%- comment -%}
+  Resolves an image path to a full URL.
+  Handles both absolute URLs (containing "://") and site-relative paths.
+  Usage:  {% include responsive-image.html src=post.image %}
+  Output: The resolved URL string (no surrounding HTML — use inside src="" or url()).
+{%- endcomment -%}
+{%- if include.src contains "://" -%}{{ include.src }}{%- else -%}{{ site.baseurl }}/{{ include.src }}{%- endif -%}

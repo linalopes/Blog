@@ -21,7 +21,7 @@ description: "Some bits of the day by day"
     <div class="col-md-6">
     <div class="card border-0 mb-4 box-shadow">
     <a href="{{site.baseurl}}{{latest_post.url}}">
-    <div class="topfirstimage" style="background-image: url({% if latest_post.image contains "://" %}{{ latest_post.image }}{% else %} {{site.baseurl}}/{{ latest_post.image}}{% endif %}); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>
+    <div class="topfirstimage" style="background-image: url({% include responsive-image.html src=latest_post.image %}); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>
     </a>
     <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
     <h2 class="card-title">
@@ -32,11 +32,7 @@ description: "Some bits of the day by day"
     </p>
     <div>
         <small class="d-block text-muted">
-            <span class="catlist">
-                {% for category in latest_post.categories %}
-                <a class="text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-                {% endfor %}
-                </span>
+            {% include catlist.html categories=latest_post.categories %}
         </small>
         <small class="text-muted">
             {{ latest_post.date | date: '%b %d, %Y' }}
@@ -54,7 +50,7 @@ description: "Some bits of the day by day"
                 {% if second_post.image %}
                 <div class="col-md-4">
                 <a href="{{site.baseurl}}{{second_post.url}}">
-                 <img class="w-100" src="{% if second_post.image contains "://" %}{{ second_post.image }}{% else %}{{ second_post.image | absolute_url }}{% endif %}" alt="{{ second_post.title }}">
+                 <img class="w-100" src="{% include responsive-image.html src=second_post.image %}" alt="{{ second_post.title }}">
                 </a>
                 </div>
                 {% endif %}
@@ -63,11 +59,7 @@ description: "Some bits of the day by day"
                     <a class="text-dark" href="{{site.baseurl}}{{second_post.url}}">{{ second_post.title }}</a>
                     </h2>
                     <small class="d-block text-muted">
-                        <span class="catlist">
-                        {% for category in second_post.categories %}
-                        <a class="text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-                        {% endfor %}
-                        </span>
+                        {% include catlist.html categories=second_post.categories %}
                     </small>
                     <small class="text-muted">
                         {{ second_post.date | date: '%b %d, %Y' }}
@@ -81,7 +73,7 @@ description: "Some bits of the day by day"
                 {% if third_post.image %}
                 <div class="col-md-4">
                 <a href="{{site.baseurl}}{{third_post.url}}">
-                 <img class="w-100" src="{% if third_post.image contains "://" %}{{ third_post.image }}{% else %}{{site.baseurl}}/{{ third_post.image }}{% endif %}" alt="{{ third_post.title }}">
+                 <img class="w-100" src="{% include responsive-image.html src=third_post.image %}" alt="{{ third_post.title }}">
                 </a>
                 </div>
                 {% endif %}
@@ -90,11 +82,7 @@ description: "Some bits of the day by day"
                     <a class="text-dark" href="{{site.baseurl}}{{third_post.url}}">{{ third_post.title }}</a>
                     </h2>
                     <small class="d-block text-muted">
-                        <span class="catlist">
-                        {% for category in third_post.categories %}
-                        <a class="text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-                        {% endfor %}
-                        </span>
+                        {% include catlist.html categories=third_post.categories %}
                     </small>
                     <small class="text-muted">
                         {{ third_post.date | date: '%b %d, %Y' }}
@@ -108,7 +96,7 @@ description: "Some bits of the day by day"
                 {% if fourth_post.image %}
                 <div class="col-md-4">
                 <a href="{{site.baseurl}}{{fourth_post.url}}">
-                <img class="w-100" src="{% if fourth_post.image contains "://" %}{{ fourth_post.image }}{% else %}{{site.baseurl}}/{{ fourth_post.image }}{% endif %}" alt="{{ fourth_post.title }}">
+                <img class="w-100" src="{% include responsive-image.html src=fourth_post.image %}" alt="{{ fourth_post.title }}">
                 </a>
                 </div>
                 {% endif %}
@@ -117,11 +105,7 @@ description: "Some bits of the day by day"
                     <a class="text-dark" href="{{site.baseurl}}{{fourth_post.url}}">{{ fourth_post.title }}</a>
                     </h2>
                     <small class="d-block text-muted">
-                        <span class="catlist">
-                        {% for category in fourth_post.categories %}
-                        <a class="text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-                        {% endfor %}
-                        </span>
+                        {% include catlist.html categories=fourth_post.categories %}
                     </small>
                     <small class="text-muted">
                         {{ fourth_post.date | date: '%b %d, %Y' }}
