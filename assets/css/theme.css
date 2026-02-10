@@ -1021,9 +1021,109 @@ article li {
   margin-bottom: 1.5rem; */
 	color: rgba(34, 17, 62, 0.9);
 }
-article pre,article figure,article img,article iframed,article embed {
+article pre,article figure,article img,article iframe,article embed {
 	margin-bottom:2rem;
 }
+
+/* ============================================
+   ARTICLE MEDIA — images, figures, grids,
+   video/embed wrappers inside posts only
+   ============================================ */
+
+/* --- A) Base media defaults ---------------------------------- */
+article.article-post img,
+article.article-post video {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+article.article-post iframe {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	border: 0;
+	display: block;
+}
+
+/* --- B) Figure + caption ------------------------------------- */
+article.article-post figure.post-figure {
+	margin: 2rem 0;
+}
+article.article-post figure.post-figure img {
+	width: 100%;
+	border-radius: var(--radius-md, 12px);
+}
+article.article-post figure.post-figure figcaption {
+	margin-top: 0.5rem;
+	font-size: 0.9em;
+	opacity: 0.75;
+	font-weight: 300;
+}
+
+/* --- C) Image sizing utilities ------------------------------- */
+article.article-post .post-img {
+	width: 100%;
+	border-radius: var(--radius-md, 12px);
+}
+article.article-post .post-img--full {
+	width: 100%;
+	border-radius: var(--radius-md, 12px);
+}
+article.article-post .post-img--sm {
+	max-width: 520px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: var(--radius-md, 12px);
+}
+article.article-post .post-img--xs {
+	max-width: 360px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: var(--radius-md, 12px);
+}
+article.article-post .post-img--no-radius {
+	border-radius: 0;
+}
+article.article-post .post-img--tight {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+/* --- D) Grid / gallery helpers ------------------------------- */
+article.article-post .post-grid {
+	display: grid;
+	gap: 12px;
+	margin: 2rem 0;
+}
+article.article-post .post-grid--2 {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+article.article-post .post-grid--3 {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (max-width: 768px) {
+	article.article-post .post-grid--2,
+	article.article-post .post-grid--3 {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* --- E) Responsive video / embed wrapper --------------------- */
+article.article-post .post-embed {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%; /* 16:9 */
+	border-radius: var(--radius-md, 12px);
+	overflow: hidden;
+	margin: 2rem 0;
+}
+article.article-post .post-embed > iframe,
+article.article-post .post-embed > video {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+}
+
 /* === BLOCKQUOTES === */
 article blockquote {
 	font-family: var(--font-family-serif);

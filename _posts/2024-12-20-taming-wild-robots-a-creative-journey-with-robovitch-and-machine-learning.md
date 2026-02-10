@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Taming Wild Robots - A Creative Journey with Robovitchch and Machine Learning
-id: 2024-12-20-taming-wild-robots-a-creative-journey-with-Robovitchch-and-machine-learning.md
+title: Taming Wild Robots - A Creative Journey with Robovitch and Machine Learning
+id: 2024-12-20-taming-wild-robots-a-creative-journey-with-Robovitch-and-machine-learning.md
 categories:
   - documentation
 image: https://live.staticflickr.com/65535/54254677120_f8b87e330d_k.jpg
@@ -32,6 +32,7 @@ Robovitch, my small robotic companion, now understands three distinct hand gestu
 - **Neutral (no gesture)**: Robovitch stays calm, returning to its neutral posture.
 
 Through the magic of machine learning, I trained Robovitch to recognize these gestures using **Teachable Machine**, a beginner-friendly tool by Google that allows anyone to create custom machine learning models. This model runs live through a webcam, detecting gestures in real time and sending instructions to the robot.
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QqyrFc_gQtg?si=VQ8htbXOJbXfUmj6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
