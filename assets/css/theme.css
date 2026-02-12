@@ -1022,7 +1022,7 @@ small.text-muted {
 }
 article {
 	font-size:var(--font-size-article);
-	line-height:var(--line-height-loose);
+	/* line-height:var(--line-height-loose); */
 }
 /* === ARTICLE HEADLINES === */
 .article-headline,
@@ -1198,6 +1198,8 @@ article h3 {
 	color: var(--color-brand-deep-purple);
 	margin-top: 2rem;
 	margin-bottom: 1rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid var(--color-light-blue);
 }
 /* ============================================
    CARD TITLES - Semantic and Clear
