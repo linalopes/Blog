@@ -5,9 +5,11 @@ id: 2026-01-24-webxr-mixed-reality-particles-meta-quest-3.md
 categories:
   - documentation
   - school-of-tomorrows-ai
+  - creative process
 image: https://cloud.linalopes.info/index.php/apps/files_sharing/publicpreview/greWjZg8XZWxoYr?file=Screenshot%202026-02-11%20at%2018.57.59.png&x=2400&y=2400&a=true
 share: "true"
 comments: "true"
+filename: Blog/_posts/2026-01-24-webxr-mixed-reality-particles-meta-quest-3.md
 tags:
   - threejs
   - webxr
@@ -53,7 +55,7 @@ At that point, the ingredients were already familiar to me:
 
 
 Then there was a coincidence.  
-A **Meta Quest 3** headset was sitting in the atelier — borrowed for another project with **Stefanie Inhelder**. Normally, this would mean Unity, Meta Developer Tools, builds, deployments, and a fair amount of hoping things wouldn’t break.
+A **Meta Quest 3** headset was sitting in the atelier — borrowed for another project with [**Stefanie Inhelder**](https://www.cie-glitch.com/wp-content/uploads/2025/02/Portfolio_Stefanie_Inhelder_web.pdf). Normally, this would mean Unity, Meta Developer Tools, builds, deployments, and a fair amount of hoping things wouldn’t break.
 
 But this time I wondered:  
 _What if this stayed in the browser?_
@@ -77,6 +79,7 @@ A mixed reality WebXR experience that runs in **Meta Quest Browser** using an `i
 - **Sculpt** — fingertip magnet (attractor)
 
 ![](https://cloud.linalopes.info/index.php/apps/files_sharing/publicpreview/greWjZg8XZWxoYr?file=Screenshot%202026-02-11%20at%2018.57.59.png&x=2400&y=2400&a=true)
+
 # Making (Recipe-style, but short)
 
 ## Prerequisites
@@ -156,7 +159,7 @@ The point is lowering the threshold so students/creatives can get to:
 ## Results (what exists today)
 
 - [**GitHub repo**](https://github.com/linalopes/SchoolAI-MR-JS-Particles)  
-- [**Video Portrait**]()
+- [**Video Portrait**](https://cloud.linalopes.info/public.php/dav/files/greWjZg8XZWxoYr/copy_E11B4C86-C55E-4B28-965C-8F1ABA836D35.mp4)
 - **Performance note:** I started around ~9k particles to keep it stable on-device.
 
 
