@@ -12,10 +12,6 @@ tags:
 
 Welcome to a embodied AI laboratory where machines learn to imagine.
 
-This space documents experiments in AI and Machine Learning for
-Creative Practices: from hand-gesture robots to generative art,
-from interactive installations to speculative narratives.
+This space documents experiments in AI and Machine Learning for Creative Practices: from hand-gesture robots to generative art, from interactive installations to speculative narratives.
 
-Here, AI is a co-pilot for radical imagination. Some projects work
-perfectly. Others break beautifully. All explore what happens when
-real creativity meets artificial intelligence.
+Here, AI is a co-pilot for radical imagination. Some projects work perfectly. Others break beautifully. All explore what happens when real creativity meets artificial intelligence.
