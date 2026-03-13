@@ -25,6 +25,24 @@ layout: default
     <!-- <h1 class="ai-title">{{page.title}}</h1> -->
     <img src="{{ site.baseurl }}/assets/images/horizontal-transparent.svg" alt="School of Tomorrow's AI" class="img-fluid">
     <!-- <p class="ai-subtitle">{{page.paragraph}}</p> -->
+    <div class="ai-interaction-hint" aria-label="Hand interaction hints">
+      <p class="ai-interaction-privacy">
+        <i class="fas fa-lock" aria-hidden="true"></i>
+        <span>Camera runs locally <br>— no data leaves your device.</span>
+      </p>
+      <div class="ai-interaction-grid">
+        <div class="ai-interaction-item">
+          <img src="{{ site.baseurl }}/assets/images/open-hand.svg" alt="Open hand gesture">
+          <p class="ai-interaction-label">Open hand</p>
+          <p class="ai-interaction-description">Expand particles</p>
+        </div>
+        <div class="ai-interaction-item">
+          <img src="{{ site.baseurl }}/assets/images/close-fist.svg" alt="Closed fist gesture">
+          <p class="ai-interaction-label">Closed fist</p>
+          <p class="ai-interaction-description">Collapse particles</p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="page-content">

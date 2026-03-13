@@ -1384,6 +1384,11 @@ div.a2a_full_footer {display:none;}
 	pointer-events: none; /* Can't interact with iframe */
 }
 
+.ai-content-overlay > .container,
+.ai-content-overlay.container {
+  overflow: visible;
+}
+
 .ai-content-overlay {
 	position: relative;
 	z-index: 1;
@@ -1393,11 +1398,84 @@ div.a2a_full_footer {display:none;}
 
 /* Hero section with glassmorphism */
 .ai-hero {
-	text-align: center;
+  position: relative;
+  overflow: visible;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin-bottom: 4rem;
-	/* padding: 3rem 2rem; */
 	backdrop-filter: blur(2px);
 	border-radius: 4px;
+}
+
+.ai-interaction-hint {
+	position: static;
+	margin: 1rem auto 0;
+	width: fit-content;
+	max-width: 260px;
+	padding: 0.85rem 1rem;
+	background: rgba(255, 255, 255, 0.28);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+	border-radius: 4px;
+}
+
+.ai-interaction-privacy {
+	display: flex;
+	align-items: center;
+	gap: 0.45rem;
+	margin-bottom: 0.65rem;
+	font-family: var(--font-family-mono);
+	font-size: 0.65rem;
+	font-weight: 400;
+	line-height: 1.3;
+	color: rgba(34, 17, 62, 0.7);
+}
+
+.ai-interaction-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ai-interaction-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 0.15rem 0.75rem 0;
+	overflow: hidden;
+}
+
+.ai-interaction-item + .ai-interaction-item {
+	border-left: 1px solid rgba(34, 17, 62, 0.2);
+}
+
+.ai-interaction-item img {
+	width: 24px;
+	height: 24px;
+	max-width: 24px;
+	max-height: 24px;
+	display: block;
+	flex-shrink: 0;
+	object-fit: contain;
+	margin-bottom: 0.35rem;
+}
+
+.ai-interaction-label {
+	margin: 0;
+	font-family: var(--font-family-title);
+	font-size: 0.7rem;
+	font-weight: 500;
+	color: var(--color-brand-deep-purple);
+}
+
+.ai-interaction-description {
+	margin: 0.15rem 0 0;
+	font-family: var(--font-family-sans);
+	font-size: 0.65rem;
+	font-weight: 300;
+	line-height: 1.35;
+	color: rgba(34, 17, 62, 0.72);
 }
 
 .ai-title {
