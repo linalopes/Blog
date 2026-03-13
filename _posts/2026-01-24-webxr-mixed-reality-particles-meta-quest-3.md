@@ -3,9 +3,8 @@ layout: post
 title: "Mixed Reality in the Browser: WebXR Particles on Meta Quest 3 (Three.js)"
 id: 2026-01-24-webxr-mixed-reality-particles-meta-quest-3.md
 categories:
-  - documentation
-  - school-of-tomorrows-ai
   - creative process
+  - school of tomorrow's ai
 image: https://cloud.linalopes.info/index.php/apps/files_sharing/publicpreview/greWjZg8XZWxoYr?file=Screenshot%202026-02-11%20at%2018.57.59.png&x=2400&y=2400&a=true
 share: "true"
 comments: "true"

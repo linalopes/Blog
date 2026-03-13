@@ -3,9 +3,9 @@ layout: post
 title: From Emotional Text to Light — Building Affective Atmosphere 2046 During SheBuilds
 id: text-to-light-affective-atmosphere-2046
 categories:
-  - documentation
   - creative process
-  - school-of-tomorrows-ai
+  - school of tomorrow's ai
+  - embodied ai
 image: https://cloud.linalopes.info/index.php/apps/files_sharing/publicpreview/cNAt2rRw66MJYcZ?file=cloud.webp&x=2400&y=2400&a=true
 share: "true"
 comments: "true"
@@ -22,8 +22,11 @@ tags:
   - anthropic
   - shebuilds
   - prototype
+  - school-of-tomorrows-ai
 date: 2026-03-10
 author: lina
+related_initiative:
+  - "[[Affective Atmosphere 2046]]"
 ---
 
 <video controls playsinline preload="metadata" style="width: 40%; border-radius: 4px; margin: 2rem 0;">
@@ -35,7 +38,6 @@ author: lina
 >
 > TL;DR — During SheBuilds, I used Lovable with Anthropic to prototype a web interface that turns emotional text into light; the concept proved itself in about an hour with only a few prompts, and the most important technical lesson was that the full experience only worked once I synced the project to GitHub and ran it locally to reach the physical cloud.
 
-* * *
 
 ## The spark
 

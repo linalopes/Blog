@@ -3,11 +3,18 @@ layout: post
 title: The Clock That Survived — Rebuilding a 1971 Archive as a Web Narrative
 id: 2026-03-05-the-clock-that-survived-rebuilding-a-1971-archive-as-a-web-narrative.md
 categories:
+  - creative process
+  - school of tomorrow's ai
 image: https://cloud.linalopes.info/index.php/apps/files_sharing/publicpreview/enxPPKCYmaPzRgZ?file=cover.webp&x=2400&y=2400&a=true
 share: "true"
 comments: "true"
 filename: creativity-in-vitro/_posts/2026-03-05-the-clock-that-survived-rebuilding-a-1971-archive-as-a-web-narrative.md
 tags:
+  - archive
+  - documentation
+  - Luzern
+  - hyper-narrative
+  - school-of-tomorrows-ai
 date: 2026-03-05
 author: lina
 ---

@@ -5,7 +5,9 @@ layout: page-ai-background
 permalink: /schoolai.html
 image: https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/event-covers/ad/bfd569d2-0d29-4a4d-a188-31a143ab496f.png
 comments: false
-searchTag: ai
+searchTag:
+  - ai
+  - school-of-tomorrows-ai
 tags:
   - sticky
 ---

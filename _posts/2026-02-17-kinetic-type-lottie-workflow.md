@@ -5,7 +5,7 @@ id: 2026-02-17-kinetic-type-lottie-workflow
 categories:
   - documentation
   - digital tools
-  - school-of-tomorrows-ai
+  - school of tomorrow's ai
 image: https://cloud.linalopes.info/index.php/apps/files_sharing/publicpreview/gwxj5meXYRjqdED?file=/2026-02-17-kinetic-type-lottie-workflow/Screenshot%202026-02-22%20at%2016.10.39.png&x=2400&y=2400&a=true
 share: "true"
 comments: "true"
@@ -24,6 +24,7 @@ tags:
   - gemini
   - animated-svg
   - creative-coding
+  - school-of-tomorrows-ai
 date: 2026-02-17
 author: lina
 excalidraw-source: "[[Kinetic Typography —Tools Map - Drawing 2026-02-23 11.51.36.excalidraw]]"
