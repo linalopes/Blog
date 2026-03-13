@@ -12,6 +12,7 @@ tags:
   - machine-learning
   - robot
   - ai
+  - embodied-ai
 date: 2024-12-20
 author: lina
 ---
