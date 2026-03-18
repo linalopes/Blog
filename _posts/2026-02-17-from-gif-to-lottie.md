@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "From GIF to Lottie: What I Learned Chasing Transparent Animated Text"
-id: 2026-02-17-kinetic-type-lottie-workflow
+id: 2026-02-17-from-gif-to-lottie
 categories:
   - documentation
   - digital tools
@@ -9,7 +9,7 @@ categories:
 image: https://cloud.linalopes.info/index.php/apps/files_sharing/publicpreview/gwxj5meXYRjqdED?file=/2026-02-17-kinetic-type-lottie-workflow/Screenshot%202026-02-22%20at%2016.10.39.png&x=2400&y=2400&a=true
 share: "true"
 comments: "true"
-filename: Blog/_posts/2026-02-17-kinetic-type-lottie-workflow.md
+filename: Blog/_posts/2026-02-17-from-gif-to-lottie.md
 tags:
   - kinetic-typography
   - gif
@@ -27,7 +27,7 @@ tags:
   - school-of-tomorrows-ai
 date: 2026-02-17
 author: lina
-excalidraw-source: "[[Kinetic Typography —Tools Map - Drawing 2026-02-23 11.51.36.excalidraw]]"
+excalidraw-source: "[[From GIF to Lottie —Tools Map - Drawing 2026-02-23 11.51.36.excalidraw]]"
 ---
 
 > **School of Tomorrow's AI note:** Can typography be an infographic format? Can it be lightweight, transparent, and reusable — like code?
