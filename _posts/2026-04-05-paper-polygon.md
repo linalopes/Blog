@@ -128,6 +128,7 @@ A 900×600 canvas opens. Point a colored paper shape at your webcam.
 | `Y` | yellow |
 
 
+
 **Step 3 — Debug the detection**
 Press `V` to toggle the debug panel. Press `M` to cycle through: camera feed → binary mask → contour overlay. Use this to check if the mask is clean.
 
