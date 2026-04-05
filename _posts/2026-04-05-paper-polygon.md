@@ -43,7 +43,6 @@ related_initiative:
 
 **Repository:** [GitHub — paper-polygon](https://github.com/linalopes/SchoolAI-paper-polygon)
 
----
 
 ## The hook
 
@@ -55,7 +54,7 @@ I followed along. But somewhere between one iteration and the next, I found myse
 
 <mark style="background: #FFB8EBA6;">What happens when the input to a generative grid is not code, but a physical object in the room?</mark>
 
----
+
 
 ## A quick note on py5
 
@@ -65,7 +64,7 @@ This matters for two reasons. First, Processing has decades of creative coding D
 
 Alexandre is one of the practitioners keeping this lineage alive with py5. Watching him teach a grid exercise in py5 is watching someone who understands that creative coding is not about the output. **It is about training yourself to think in transformations.**
 
----
+
 
 ## What I built
 
@@ -89,13 +88,13 @@ A sketch that:
 The result: move your mouse, and the entire grid rotates. Change the paper shape, and the grid redraws itself. No code change required.
 
 
----
+
 
 ## But first — how the paper shapes were made
 
 The paper pieces were not drawn by hand. I described the shapes I wanted in natural language and asked Claude AI to generate an SVG. The prompt, in full:
 
-> *Eu quero que você faça um SVG cuja área de trabalho é de 400mm por 400mm. Dentro dessa área, você vai desenhar geometrias: quadrados, retângulos, triângulos equiláteros, triângulos isósceles, trapézios, círculo, semicírculo — cada uma dentro de uma área de 40×40mm. Linha preta simples, fundo transparente. As geometrias não podem se sobrepor e não podem ultrapassar a área de 400×400mm.*
+> *I want you to create an SVG file with a workspace of 400mm by 400mm. Within this area, you will draw geometric shapes: squares, rectangles, equilateral triangles, isosceles triangles, trapezoids, circles, and semicircles—each within a 40x40mm area. Use simple black lines and a transparent background. The shapes cannot overlap and cannot exceed the 400x400mm area.*
 
 Claude generated a complete, cut-ready SVG. I loaded it into a Creality Falcon 2 laser cutter and cut the shapes from colored cardstock.
 
@@ -103,7 +102,7 @@ Claude generated a complete, cut-ready SVG. I loaded it into a Creality Falcon 2
 
 ![](https://raw.githubusercontent.com/linalopes/SchoolAI-paper-polygon/76038edfdc724c03b134c691f29a73161d19bc45/geometry_grid_400mm.svg)
 
----
+
 
 ## Making — the recipe
 
@@ -128,6 +127,7 @@ A 900×600 canvas opens. Point a colored paper shape at your webcam.
 | `P` | pink |
 | `Y` | yellow |
 
+
 **Step 3 — Debug the detection**
 Press `V` to toggle the debug panel. Press `M` to cycle through: camera feed → binary mask → contour overlay. Use this to check if the mask is clean.
 
@@ -142,7 +142,7 @@ Mouse X rotates all 100 copies simultaneously. Left = one direction, right = the
 
 
 
----
+
 
 ## Troubleshooting
 
@@ -152,7 +152,7 @@ Mouse X rotates all 100 copies simultaneously. Left = one direction, right = the
 
 **Sketchy polygon with too many vertices:** increase `APPROX_EPSILON_FACTOR` (default `0.02`). Higher values give you fewer, cleaner vertices.
 
----
+
 
 ## Studio notes
 
@@ -164,7 +164,7 @@ Mouse X rotates all 100 copies simultaneously. Left = one direction, right = the
 
 **On the grid as structure:** Alexandre's exercise was right. The grid is not decoration — it is a constraint that forces you to ask: *what is the unit?* Here, the unit is whatever you cut from colored cardstock and hold up to the camera. **The grid became a machine for discovering shapes, not for displaying them.**
 
----
+
 
 ## Results
 
@@ -180,7 +180,7 @@ Mouse X rotates all 100 copies simultaneously. Left = one direction, right = the
 - `paper-polygon-diagram-v2.excalidraw` — full system diagram (open at [excalidraw.com](https://link.excalidraw.com/readonly/OCBHx3G4PjCRx8lBtwB7))
 - `README.md` — full setup and parameter documentation
 
----
+
 
 ## Reflections
 
@@ -188,15 +188,14 @@ Mouse X rotates all 100 copies simultaneously. Left = one direction, right = the
 
 What surprised me most was how little the detection needed to be. A blob, a contour, a polygon approximation. The camera doesn't need to understand the shape. It just needs to find its edges. **The meaning — the drawing — is added by the grid.**
 
----
+
 
 ## Next possibilities
 
-- Add homography calibration so the detected shape accounts for camera angle and perspective
 - Try depth-based detection (remove the dependency on color)
-- Port to a browser version using ml5.js + p5.js for the webcam pipeline
-- Use the sketch as a classroom tool in School of Tomorrow's AI workshops — let students bring their own cut shapes
-- Explore other projection surfaces beyond flat paper: fabric, crumpled sheets, 3D objects
+- Port to a browser version using opencv.js + p5.js for the webcam pipeline
+- Use the sketch as a classroom tool in School of Tomorrow's AI workshops — let students produce their own cut shapes
+
 
 ---
 
