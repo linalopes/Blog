@@ -7,7 +7,6 @@ categories:
   - AI projects
   - school-of-tomorrows-ai
   - prototype
-  - image
 image: https://cloud.linalopes.info/index.php/apps/files_sharing/publicpreview/Fx98PPFNBDNgAAa?file=Screenshot%202026-03-31%20at%2014.42.02.webp&x=2400&y=2400&a=true
 share: "true"
 comments: "true"
@@ -43,7 +42,6 @@ related_initiative:
 - **Full setup:** webcam → Thonny → OBS virtual camera → MadMapper → projector → back onto the paper
 
 **Repository:** [GitHub — paper-polygon](https://github.com/linalopes/SchoolAI-paper-polygon)
-**Diagram:** `paper-polygon-diagram.excalidraw` — full system map (installation loop · code · fabrication)
 
 ---
 
