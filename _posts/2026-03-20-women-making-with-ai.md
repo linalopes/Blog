@@ -30,8 +30,7 @@ On March 15th, four women sat in a room in Wetzikon and talked about AI for thre
 
 That sentence still surprises me a little. Not because we're unusually talkative — but because the conversation never turned into a debate about tools. It turned into something harder to name. A reckoning, maybe. Or a rehearsal.
 
-
-**School of Tomorrow's AI note:** This was the first gathering of *Women Making with AI* — a small, recurring series hosted at my studio space in Wetzikon. Artists, designers, and researchers who use AI as part of their creative or intellectual practice. No agenda, no demos, no pitches. Each person prepares 15 minutes: something they've been working on, a question they're sitting with, or something they're curious to explore. The rest unfolds.
+>**School of Tomorrow's AI note:** This was the first gathering of *Women Making with AI* — a small, recurring series hosted at my studio space in Wetzikon. Artists, designers, and researchers who use AI as part of their creative or intellectual practice. No agenda, no demos, no pitches. Each person prepares 15 minutes: something they've been working on, a question they're sitting with, or something they're curious to explore. The rest unfolds.
 
 
 ## TL;DR
@@ -52,7 +51,7 @@ A data scientist building pipelines. A UX researcher who spent years at Spotify 
 
 We don't share a discipline. We don't share a workflow. What we share is a kind of productive unease: AI is inside our practice now, and we're still figuring out what that means for the work, for authorship, and — this surprised me — for our emotional lives.
 
-I invited them because I'm the common thread. I met [Karla](https://vitaminak.design) through a chain of events involving Brazilian food and a Lucerne meetup. I met [Sarah](https://www.sarahmennicken.com) at a Google Lunch, both of us bonding over Obsidian of all things. I met [Zoë](https://www.zoedowlen.ch) more recently — and she showed up with the most honest sentence of the afternoon: *"I feel perhaps the most underqualified."* She wasn't.
+I invited them because I'm the common thread. I met [Karla](https://vitaminak.design) through a chain of events involving Brazilian food and a Lucerne meetup. I met [Sarah](https://www.sarahmennicken.com) at a Google Lunch, both of us bonding over Obsidian of all things. I met [Zoë](https://www.zoedowlen.ch) more recently — and she showed up with the most honest sentence of the afternoon: *"I feel perhaps the most underqualified."* She wasn't. Actually, she was the one who prompt in my mind the idea of this meeting.
 
 
 
@@ -64,8 +63,9 @@ Sarah brought what she called "anxious AI" — not as a metaphor, but as a genui
 
 Zoë brought her archive project — a year in, and, as she put it, "barely scratching the surface." She is trying to use AI to make sense of a life's worth of heterogeneous media: textiles, video, performance, text. What she's finding is that the tools assume a kind of order that creative practice never had.
 
-And I showed Ball Droppings — my ongoing p5.js and OpenCV installation where physical post-its on a wall become collision obstacles for falling digital balls. Which is, I suppose, my way of asking: what happens when the physical and the computed share the same space?
+And I showed **Mr. Sonnet** — a cardboard robot poet that combines a web interface with a micro:bit-controlled servo motor and the Anthropic API. You type, it moves, it responds in verse. It's my way of asking what it feels like when AI has a body — even a very humble, corrugated one. Which is, I suppose, my way of asking: 
 
+> what happens when the physical and the computed share the same space?
 
 
 ## The thesis that kept coming back
@@ -86,17 +86,16 @@ From there, we found ourselves asking things that don't appear in product roadma
 That last one emerged from a thread about multilingual users being underserved by current tools — how voice design, accent, and language context still heavily shape who AI "speaks to," and who it leaves out. Several examples in the room. None of them hypothetical.
 
 
-
 ## What surprised me
 
 I expected we'd spend more time on tools. We barely did.
 
-What came up instead: the tension between creative control and generative output. The question of embodiment — why the most interesting AI interfaces in the room weren't screens. Karla's couch-as-AI-interface provocation. Sarah's pile of tissues from nearly missing the gathering because of a cold, and then showing up anyway because she'd already started writing her thoughts down. Zoë quietly saying she felt the most connected to her archive after the AI made her confront how little structure she'd imposed on it.
+What came up instead: the tension between creative control and generative output. The question of embodiment — why the most interesting AI interfaces in the room weren't screens.  My couch-as-AI-interface provocation. Sarah's pile of tissues from nearly missing the gathering because of a cold, and then showing up anyway because she'd already started writing her thoughts down. Zoë quietly saying she felt the most connected to her archive after the AI made her confront how little structure she'd imposed on it.
 
-<mark style="background: #FFB8EBA6;">The conversation kept returning to a question I don't know how to answer yet: what kinds of offline experiences are truly about human connection — and which are still just individualised consumption in a different room?</mark>
+<mark style="background: #FFB8EBA6;">Sometimes the unanswered questions are more useful than the answers.</mark>
+ We left with more of them than we arrived with. That felt exactly right.
 
-I think that question applies to this gathering too. I hope the answer is the former. The fact that Sarah left and immediately ordered two more desks for her space in Zug, and said we could keep the cardboard to build *Mr. OPUS* — Karla's name for our hypothetical next collaborative robot — suggests we're at least pointing in the right direction.
-
+The fact that Sarah left and immediately ordered two more desks for her space in Zug, and said we could keep the cardboard to build *Mr. OPUS* — the name for our hypothetical next collaborative robot — suggests we're at least pointing in the right direction.
 
 
 ## Reflections
