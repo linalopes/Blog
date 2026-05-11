@@ -565,9 +565,9 @@ What happens when one small machine sees, another one thinks, and the interface 
 
 ## Resources
 
-- AI @ SGMK wiki: https://wiki.sgmk-ssam.ch/wiki/AI@SGMK#Local_AI_%E2%80%93_take_control_of_your_data:
-- GGUF docs: https://huggingface.co/docs/hub/en/gguf
-- Apertus models on Hugging Face: https://huggingface.co/models?library=gguf&sort=trending&search=apertus
-- Apertus: https://apertvs.ai/
-- Ollama: https://ollama.com/
-- Open WebUI: https://github.com/open-webui/open-webui
+- [AI @ SGMK wiki](https://wiki.sgmk-ssam.ch/wiki/AI@SGMK#Local_AI_%E2%80%93_take_control_of_your_data)
+- [GGUF docs](https://huggingface.co/docs/hub/en/gguf)
+- [Apertus models on Hugging Face](https://huggingface.co/models?library=gguf&sort=trending&search=apertus)
+- [Apertus](https://apertvs.ai/)
+- [Ollama](https://ollama.com/)
+- [Open WebUI](https://github.com/open-webui/open-webui)
