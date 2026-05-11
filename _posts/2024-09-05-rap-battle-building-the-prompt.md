@@ -250,13 +250,13 @@ window.onload = function() {
     Accessed: September 12, 2024
     
 4. Google Spreadsheet API  
-    https://developers.google.com/sheets/api  
+    [Google Sheets API](https://developers.google.com/sheets/api)  
     Accessed: September 12, 2024
     
 5. CSV (Comma-Separated Values) Format  
-    https://tools.ietf.org/html/rfc4180  
+    [RFC 4180 — Common Format and MIME Type for CSV Files](https://tools.ietf.org/html/rfc4180)  
     Accessed: September 12, 2024
-    
+     
 6. GitHub Repository for Hosting Code  
     [https://github.com/](https://github.com/)  
     Accessed: September 12, 2024

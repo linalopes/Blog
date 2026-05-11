@@ -77,7 +77,7 @@ graph TD
 
 The AI @ SGMK page for the 10 May install fest already hinted at a distinction that became important later: not every single-board computer is positioned the same way for local inference. The page mentioned the **Radxa Rock 5b** with RK3588, 16GB RAM, and a **6 TOPS NPU**, plus **Open WebUI + Ollama API** as a more polished interface layer for local setups. Reading that after the fact helped me understand that my Raspberry Pi test was never just about “small device vs big device.” It was also about **which kinds of acceleration and interface expectations were implicit in the machine I was holding**.
 
-That mattered because I had made a basic but revealing confusion: I had mixed up the **Raspberry Pi M.2 HAT+** with the **AI HAT+**. One is about expansion and storage. The other is about AI acceleration. That misunderstanding turned out to be part of the lesson.
+To be precise, this experiment was run on a **Raspberry Pi 5 with 8GB RAM**, **without the AI HAT+ accelerator** I had initially assumed I was using. That clarification mattered because it made the results easier to read: the main limit I was seeing was not storage, and not RAM either, but **CPU-bound transformer inference** on the Pi itself.
 
 ## But first — the first local answers
 
