@@ -40,6 +40,7 @@
       <script>
         document.addEventListener('DOMContentLoaded', (event) => {
           document.querySelectorAll('pre').forEach((block) => {
+            if (block.querySelector('code.language-mermaid')) return;
             let button = document.createElement('button');
             button.className = 'copy-button';
             button.innerText = 'Copy';
@@ -114,6 +115,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.min.js"
         integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Mermaid (client-side diagrams; fenced ```mermaid in Markdown) -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11.4.0/dist/mermaid.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{{site.baseurl}}/assets/js/mermaid-init.js"></script>
 
     <script src="{{site.baseurl}}/assets/js/theme.js"></script>
 

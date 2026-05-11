@@ -23,6 +23,25 @@
 }
 
 /* ============================================
+   MERMAID (client-side diagrams)
+   ============================================ */
+
+article .mermaid,
+.page-content .mermaid,
+.mermaid {
+	margin: 1.75rem 0;
+	overflow-x: auto;
+	text-align: center;
+}
+
+article .mermaid svg,
+.page-content .mermaid svg,
+.mermaid svg {
+	max-width: 100%;
+	height: auto;
+}
+
+/* ============================================
    GLOBAL FONT APPLICATION
    ============================================ */
 
